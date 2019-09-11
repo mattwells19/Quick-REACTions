@@ -13,6 +13,7 @@ class Sponsors extends Component {
                     <li>Vestibulum vulputate</li>
                     <li>Eget erat</li>
                     <li>Id porttitor</li>
+                    
                 </ol>
             </div>
         );
