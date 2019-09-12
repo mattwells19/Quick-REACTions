@@ -1,9 +1,26 @@
-.Logo {
-    width: 250px;
-    height: 250px;
+.backdrop {
+    display: block;
+    margin: auto;
+    width: 70%;
+    opacity: 0.2;
+    padding: 5vh;
+    position: relative;
 }
 
-.Card {
-    max-width: 250px;
-    margin: 50px;
+.logo {
+    display: block;
+    position: absolute;
+    top: 15%;
+    left: 35%;
+    width: 25rem;
+    height: 25rem;
+    margin: auto;
+}
+
+.header {
+    color: white;
+    position: absolute;
+    top: 80%;
+    width: 100%;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
 }
