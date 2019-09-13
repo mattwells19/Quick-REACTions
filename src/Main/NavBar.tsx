@@ -10,7 +10,7 @@ const AntTabs = withStyles({
         marginTop: "12px",
     },
     indicator: {
-        backgroundColor: '#B8860B',
+        backgroundColor: '#B3A369',
         height: "4px",
     },
 })(Tabs); //<- Uses Material UI Tabs component but overrides what's above
@@ -23,7 +23,7 @@ export default function NavBar() {
     };
 
     return (
-        <AppBar position="static" className="NavBar" style={{ backgroundColor: "#212b31" }}>
+        <AppBar position="fixed" className="NavBar" style={{ backgroundColor: "#212b31" }}>
             <AntTabs className="TabIndicator" centered value={value} onChange={handleChange}>
                 <img src={MainLogo} width="55" height="55" alt="logo" />
                 <Tab className="NavBarSelection" label="Home" component={Link} to="/" />

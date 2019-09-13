@@ -11,8 +11,9 @@ const theme = createMuiTheme({
             fontSize: "3rem",
         },
         h4: {
-            fontFamily: "Tahamo, Geneva, sans-serif",
-            fontSize: "2rem",
+            fontFamily: "Inconsolata",
+            fontSize: "1.75rem",
+            fontWeight: 700,
         },
     },
 });
@@ -20,9 +21,12 @@ const theme = createMuiTheme({
 const useStyles = makeStyles((theme: Theme) =>
     createStyles({
         root: {
+            maxWidth: "50rem",
+            display: "flex",
             backgroundColor: "#212b31",
             gridArea: "text2",
-            padding: "10px"
+            padding: "10px",
+            margin: "auto",
         },
     }),
 );
@@ -33,12 +37,9 @@ function Home() {
         <ThemeProvider theme={theme}>
             <div className="grid-container">
                 <img src={logo} className="logo" alt="Logo" />
-                <Paper className={classes.root}>
-                    <Typography align="center" className="header" variant="h3">
-                        Our Mission
-                    </Typography>
+                <Paper className={classes.root} elevation={24}>
                     <Typography align="center" className="more-text" variant="h4">
-                        To educate and to learn about all aspects of mobile robotics.
+                        Our mission is to educate and to learn about all aspects of mobile robotics.
                         From the novice to the experienced, we welcome all students who are excited to learn more about the field of robotics and apply the concepts they learn in the classroom to real world applications.
                     </Typography>
                 </Paper>

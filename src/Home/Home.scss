@@ -1,9 +1,10 @@
 .logo {
     grid-area: logo;
     display: block;
-    padding: 5rem;
-    width: 35rem;
-    height: 35rem;
+    padding-top: 6rem;
+    padding-bottom: 2rem;
+    width: 25rem;
+    height: 25rem;
     margin: auto;
 }
 
@@ -11,14 +12,12 @@
     grid-area: text;
     text-decoration: underline;
     padding-bottom: 2rem;
-    color: white;
-    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    color: #B3A369;
 }
 
 .more-text {
     grid-area: text2;
-    color: white;
-    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    color: #B3A369;
 }
 
 .grid-container {
@@ -27,8 +26,7 @@
     background-position: center center;
     display: grid;
     grid-template-areas:
-        'logo logo logo logo'
-        'logo logo logo logo'
-        'text text text text'
-        'blank text2 text2 empty';
+        'logo logo logo'
+        'blank text2 empty'
+        'zero zero zero';
 }
