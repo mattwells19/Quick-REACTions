@@ -8,25 +8,20 @@
     margin: auto;
 }
 
-.header {
-    grid-area: text;
-    text-decoration: underline;
-    padding-bottom: 2rem;
-    color: #B3A369;
-}
-
 .more-text {
-    grid-area: text2;
+    grid-area: text;
     color: #B3A369;
 }
 
 .grid-container {
     background-image: url("../Images/UNCCCrown.png");
-    background-repeat: space;
+    background-repeat: no-repeat;
     background-position: center center;
+    grid-template-columns: repeat(3, 1fr);
+    grid-auto-rows: minmax(100px, auto);
     display: grid;
     grid-template-areas:
-        'logo logo logo'
-        'blank text2 empty'
-        'zero zero zero';
+        'social logo interest'
+        '. text .'
+        '. . .';
 }
