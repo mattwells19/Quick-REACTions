@@ -8,7 +8,17 @@
     color: #B3A369;
 }
 
-.NavBar {
+.footer {
+    text-align: center;
+    padding-top: 1rem;
     background-color: #212b31;
-    height: 75px;
+    color: #B3A369;
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    height: 100px;
+}
+
+.icon {
+    vertical-align: middle;
 }
