@@ -32,8 +32,18 @@ const useStyles = makeStyles((theme: Theme) =>
     }),
 );
 
+const getTabWithPath = () => {
+    const path = window.location.pathname;
+    if (path === "/about") return 2;
+    if (path === "/sponsors") return 3;
+    if (path === "/competition") return 4;
+    if (path === "/outreach") return 5;
+    if (path === "/archive") return 6;  
+    return 1;  
+}
+
 export default function NavBar() {
-    const [value, setValue] = React.useState<number>(1); //set index of 1 for default value which is Home tab
+    const [value, setValue] = React.useState<number>(getTabWithPath()); //set index of 1 for default value which is Home tab
     const [showFeedback, setShowFeedback] = React.useState<boolean>(false);
     const [anchorEl, setAnchorEl] = React.useState<HTMLButtonElement | null>(null);
 
@@ -56,12 +66,13 @@ export default function NavBar() {
     return (
         <>
         <AppBar className={classes.appbar}>
-            <NavTabs className="TabIndicator" centered value={value} onChange={handleChange}>
+            <NavTabs scrollButtons="on" variant="scrollable" value={value} onChange={handleChange}>
                 <img src={MainLogo} width="70" height="70" alt="logo" />
                 <Tab className="NavBarSelection" label="Home" component={Link} to="/" />
                 <Tab className="NavBarSelection" label="About" component={Link} to="/about" />
                 <Tab className="NavBarSelection" label="Sponsors" component={Link} to="/sponsors" />
                 <Tab className="NavBarSelection" label="Competition" component={Link} to="/competition" />
+                <Tab className="NavBarSelection" label="Outreach" component={Link} to="/outreach" />
                 <Tab className="NavBarSelection" label="Archive" component={Link} to="/archive" />
             </NavTabs>
             <EasyToSeeTooltip title="Feedback Button">
