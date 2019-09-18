@@ -2,6 +2,7 @@ import React, { Component } from "react";
 import { createMuiTheme } from "@material-ui/core";
 import { ThemeProvider } from "@material-ui/styles";
 import { Route, BrowserRouter } from "react-router-dom";
+import {BreakpointProvider} from "react-socks";
 import Home from "../Home/Home";
 import About from "../About/About";
 import Outreach from "../Outreach/Outreach";
@@ -31,18 +32,20 @@ class Main extends Component {
   render() {
     return (
       <ThemeProvider theme={theme}>
-        <BrowserRouter>
-          <NavBar />
-          <div className="content">
-            <Route exact path="/" component={Home} />
-            <Route path="/about" component={About} />
-            <Route path="/outreach" component={Outreach} />
-            <Route path="/sponsors" component={Sponsors} />
-            <Route path="/competition" component={Competition} />
-            <Route path="/archive" component={Archive} />
-          </div>
-          <Footer />
-        </BrowserRouter>
+        <BreakpointProvider>
+          <BrowserRouter>
+            <NavBar />
+            <div className="content">
+              <Route exact path="/" component={Home} />
+              <Route path="/about" component={About} />
+              <Route path="/outreach" component={Outreach} />
+              <Route path="/sponsors" component={Sponsors} />
+              <Route path="/competition" component={Competition} />
+              <Route path="/archive" component={Archive} />
+            </div>
+            <Footer />
+          </BrowserRouter>
+        </BreakpointProvider>
       </ThemeProvider>
     );
   }
