@@ -43,7 +43,7 @@ export default function NavBarContent(props: NavBarContentProps) {
     return (
         <>
             <NavTabs orientation={isSidebar ? "vertical" : "horizontal"} scrollButtons="auto" variant="scrollable" value={value} onChange={handleChange}>
-                <img src={MainLogo} width="70" height="70" alt="logo" />
+                <img style={{alignSelf: "center"}} src={MainLogo} width="70" height="70" alt="logo" />
                 <Tab className="NavBarSelection" label="Home" component={Link} to="/" />
                 <Tab className="NavBarSelection" label="About" component={Link} to="/about" />
                 <Tab className="NavBarSelection" label="Sponsors" component={Link} to="/sponsors" />
@@ -52,7 +52,7 @@ export default function NavBarContent(props: NavBarContentProps) {
                 <Tab className="NavBarSelection" label="Archive" component={Link} to="/archive" />
             </NavTabs>
             <EasyToSeeTooltip title="Feedback Button">
-                <IconButton onClick={handleFeedbackClick} className={classes.feedback}>
+                <IconButton onClick={handleFeedbackClick} className={isSidebar ? "" : classes.feedback}>
                     <Feedback style={{color: "white"}} color="action"/>
                 </IconButton>
             </EasyToSeeTooltip>

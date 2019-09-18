@@ -16,6 +16,10 @@ const useStyles = makeStyles((theme: Theme) =>
             right: "1rem",
             top: "1rem",
         },
+        paper: {
+            background: "#212b31",
+            color: "white",
+        },
     }),
 );
 
@@ -47,7 +51,7 @@ export default function NavBar() {
                 </AppBar>
             </Breakpoint>
             <Breakpoint medium down>
-                <Drawer open={true} variant="persistent" anchor="left">
+                <Drawer classes={{paper: classes.paper}} open={true} variant="persistent" anchor="left">
                     <NavBarContent
                         isSidebar={true}
                         handleFeedbackClick={handleFeedbackClick}
