@@ -1,8 +1,17 @@
-Grid {
+.more-text {
+    grid-area: text;
+    color: #B3A369;
+}
 
-    :item {
-        padding-top: 10;
-        padding-bottom : 10;
-        background-color: green;
-    }
+.grid-box {
+    background-repeat: no-repeat;
+    background-position: center center;
+    grid-template-columns: repeat(4, 1fr);
+    grid-auto-rows: minmax(100px, auto);
+    display: grid;
+    grid-template-areas:
+    '. . . .'
+    'walmart solid adv child'
+    '. text text .'
+    '. . . .';
 }

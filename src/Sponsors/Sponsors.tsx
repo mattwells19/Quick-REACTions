@@ -1,30 +1,75 @@
-import React, { Component } from "react";
-import { Grid,  } from "@material-ui/core"
-import './Sponsors.scss';
+import React from "react";
+import { Typography, Card, Paper, makeStyles, withStyles, createStyles, Theme } from "@material-ui/core";
+import "./Sponsors.scss";
 
-class Sponsors extends Component {
-    render() {
-        return (
-            <div>
-                <h2>STUFF</h2>
 
-                <Grid container>
-                    <Grid item sm>Walmart  </Grid>
-                    <Grid item sm>SolidWorks Software  </Grid>
-                    <Grid item sm>Advanced Circuits  </Grid>
-                    <Grid item sm>Children's Theater of Charlotte  </Grid>
-                </Grid>
+const SponsorCard = withStyles({
+    root: {
+         display: "flex",
+         padding: "10px",
+         maxWidth: "15rem",
+         fontFamily: "Inconsolata",
+         backgroundColor: "#B3A369",
+         color: "#212b31",
+         margin: "auto",
+         textAlign: "center",
+         borderRadius: "1rem",
+        },
+})(Card);
 
-                <p>Interested In Sponsoring? Please contact Sam Luu (Car-robotics@uncc.edu) for questions.</p>
-                <h3>Sponsorships are ranked as follows:</h3>
-                <ol>
-                    <li>Green Level: (Under $100) With the Green Level Sponsorship, CAR will Put your company's logo on the sponsors page of our website.</li>
-                    <li>Silver Level: ($100 - $250) With the Silver Level Sponsorship, CAR will give your company the same benefits as the Green Level. In addition to the website, your logo will be added to our robot for everyone to see!</li>
-                    <li>Gold Level: (More than $250) With the Gold Level Sponsorship, your company will recieve the benfits from the Green Silver Levels in addition to adding your logo onto our team's T-Shirts!</li>
-                </ol>
-            </div>
-        );
-    }
+const useStyles = makeStyles((theme: Theme) =>
+    createStyles({
+        //Format sponsorType card
+        typeCard: {
+            maxWidth: "50rem",
+            display: "flex",
+            backgroundColor: "#212b31",
+            gridArea: "text",
+            padding: "10px",
+            margin: "auto",
+        },
+        divider: {
+            margin: "10px",
+        },
+    }),
+);
+
+
+function Sponsors() {
+    //Call the useStyles format
+    const classes = useStyles();
+    return (
+        //Create a div for page container
+        <div className="grid-box">
+                
+            <SponsorCard style={{ gridArea: "walmart"}}>
+                    Walmart
+                    </SponsorCard>
+            <SponsorCard style={{ gridArea: "solid"}}>
+                    SolidWorks Software
+                    </SponsorCard>
+            <SponsorCard style={{ gridArea: "adv"}}>
+                    Advanced Circuits
+                    </SponsorCard>
+            <SponsorCard style={{ gridArea: "child"}}>
+                    Children's Theater of Charlotte
+                    </SponsorCard>
+
+                
+            <Paper className={classes.typeCard} elevation={3}>
+                <Typography align="center" className="more-text" variant="h3">
+                    Interested In Sponsoring? Please contact Sam Luu (Car-robotics@uncc.edu) for questions.
+                    Sponsorships are ranked as follows:
+                        <ol>
+                            <li>Green Level: (Under $100) With the Green Level Sponsorship, CAR will Put your company's logo on the sponsors page of our website.</li>
+                            <li>Silver Level: ($100 - $250) With the Silver Level Sponsorship, CAR will give your company the same benefits as the Green Level. In addition to the website, your logo will be added to our robot for everyone to see!</li>
+                            <li>Gold Level: (More than $250) With the Gold Level Sponsorship, your company will recieve the benfits from the Green Silver Levels in addition to adding your logo onto our team's T-Shirts!</li>
+                        </ol>
+                </Typography>
+            </Paper>
+
+        </div>
+    );
 }
 
 export default Sponsors;
