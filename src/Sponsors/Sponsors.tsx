@@ -33,6 +33,14 @@ const useStyles = makeStyles((theme: Theme) =>
             padding: "10px",
             margin: "auto",
         },
+        sideCard: {
+                maxWidth: "50rem",
+                display: "flex",
+                backgroundColor: "#212b31",
+                gridArea: "text",
+                padding: "10px",
+                margin: "auto",
+         },
         divider: {
             margin: "10px",
         },
@@ -61,9 +69,9 @@ function Sponsors() {
             </SponsorCard>
             <SponsorCard style={{ gridArea: "child"}}>
                 <Ctc classes={classes} />
-                </SponsorCard>
+            </SponsorCard>
                 
-            <Paper className={classes.typeCard} elevation={3}>
+            <Paper className={classes.sideCard} elevation={24}>
                 <Typography align="center" className="more-text" variant="h4">
                     Interested In Sponsoring? Please contact Sam Luu (Car-robotics@uncc.edu) for questions.
                     Sponsorships are ranked as follows:
@@ -71,8 +79,8 @@ function Sponsors() {
             </Paper>
 
         
-            <Paper className={classes.typeCard} elevation={0}>
-                <Typography align="center" className="sponsor-type" variant="h5">
+            <Paper className={classes.typeCard} elevation={3}>
+                <Typography align="left" className="sponsor-type" variant="h5">
                         <ol>
                             <li>Green Level: (Under $100) With the Green Level Sponsorship, CAR will Put your company's logo on the sponsors page of our website.</li>
                             <li>Silver Level: ($100 - $250) With the Silver Level Sponsorship, CAR will give your company the same benefits as the Green Level. In addition to the website, your logo will be added to our robot for everyone to see!</li>
