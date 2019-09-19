@@ -10,7 +10,6 @@ const SideCard = withStyles({
     root: {
         display: "flex",
         padding: "10px",
-        maxWidth: "15rem",
         fontFamily: "Inconsolata",
         backgroundColor: "#B3A369",
         color: "#212b31",
@@ -39,20 +38,22 @@ const useStyles = makeStyles((theme: Theme) =>
 function Home() {
     const width = useCurrentWidth();
     const classes = useStyles();
+    const max_width = width > 1000 ? "15rem" : "";
+    const card_margin = width > 1000 ? "" : "10px";
     return (
         <div className={width > 1000 ? "grid-container" : "grid-container-mobile"}>
 
-            <SideCard style={{ gridArea: "social" }}>
+            <SideCard style={{ gridArea: "social", maxWidth: max_width, marginLeft: card_margin, marginRight: card_margin}}>
                 <Social classes={classes} />
             </SideCard>
 
             <img src={logo} className="logo" alt="Logo" />
 
-            <SideCard style={{ gridArea: "interest" }}>
+            <SideCard style={{ gridArea: "interest", maxWidth: max_width, marginLeft: card_margin, marginRight: card_margin}}>
                 <Interest classes={classes} />
             </SideCard>
 
-            <Paper className={classes.missionCard} elevation={24}>
+            <Paper className={classes.missionCard} elevation={24} style={{marginLeft: card_margin, marginRight: card_margin}}>
                 <Typography align="center" className="more-text" variant="h4">
                     Our mission is to educate and to learn about all aspects of mobile robotics.
                     From the novice to the experienced, we welcome all students who are excited

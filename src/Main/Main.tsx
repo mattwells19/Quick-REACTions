@@ -20,7 +20,7 @@ const theme = createMuiTheme({
     },
     h5: {
       fontFamily: "Inconsolata",
-      fontSize: "1rem",
+      fontSize: "1.5rem",
       fontWeight: 700,
     },
   },
