@@ -1,5 +1,6 @@
 import React from "react";
 import { Typography, Card, Paper, makeStyles, withStyles, createStyles, Theme } from "@material-ui/core";
+import { useCurrentWidth } from "react-socks";
 import logo from "../Images/CARLogoPrimary.png";
 import "./Home.scss";
 import Social from "./Social";
@@ -36,9 +37,10 @@ const useStyles = makeStyles((theme: Theme) =>
 );
 
 function Home() {
+    const width = useCurrentWidth();
     const classes = useStyles();
     return (
-        <div className="grid-container">
+        <div className={width > 1000 ? "grid-container" : "grid-container-mobile"}>
 
             <SideCard style={{ gridArea: "social" }}>
                 <Social classes={classes} />

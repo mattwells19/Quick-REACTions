@@ -1,12 +1,14 @@
 import React from "react";
-import { AppBar, makeStyles, Theme, createStyles, Popover, Drawer } from "@material-ui/core";
-import {Breakpoint} from "react-socks";
+import { AppBar, makeStyles, Theme, createStyles, Popover, Drawer, IconButton } from "@material-ui/core";
+import { Menu } from "@material-ui/icons";
+import { Breakpoint } from "react-socks";
 import NavBarContent from "./NavBarContent";
 import "./Main.scss";
 
 const useStyles = makeStyles((theme: Theme) =>
     createStyles({
         appbar: {
+            zIndex: theme.zIndex.drawer + 1,
             backgroundColor: "#212b31",
             height: "75px",
             position: "fixed",
@@ -16,15 +18,26 @@ const useStyles = makeStyles((theme: Theme) =>
             right: "1rem",
             top: "1rem",
         },
+        feedbackSidebar: {
+            width: "fit-content",
+            alignSelf: "center",
+        },
         paper: {
             background: "#212b31",
             color: "white",
+        },
+        hamburgerMenu: {
+            color: "white",
+            position: "absolute",
+            left: "10px",
+            top: "10px",
         },
     }),
 );
 
 export default function NavBar() {
     const [showFeedback, setShowFeedback] = React.useState<boolean>(false);
+    const [showSidebar, setShowSidebar] = React.useState<boolean>(false);
     const [anchorEl, setAnchorEl] = React.useState<HTMLButtonElement | null>(null);
 
     const handleFeedbackClick = (event: React.MouseEvent<HTMLButtonElement, MouseEvent>) => {
@@ -35,6 +48,10 @@ export default function NavBar() {
     const handleFeedbackClose = () => {
         setAnchorEl(null);
         setShowFeedback(false);
+    }
+
+    const handleDrawerToggle = () => {
+        setShowSidebar(!showSidebar);
     }
 
     const classes = useStyles();
@@ -51,7 +68,12 @@ export default function NavBar() {
                 </AppBar>
             </Breakpoint>
             <Breakpoint medium down>
-                <Drawer classes={{paper: classes.paper}} open={true} variant="persistent" anchor="left">
+                <AppBar className={classes.appbar}>
+                    <IconButton className={classes.hamburgerMenu} onClick={handleDrawerToggle}>
+                        <Menu fontSize="large" />
+                    </IconButton>
+                </AppBar>
+                <Drawer open={showSidebar} classes={{ paper: classes.paper }} variant="persistent" anchor="left">
                     <NavBarContent
                         isSidebar={true}
                         handleFeedbackClick={handleFeedbackClick}
@@ -59,9 +81,9 @@ export default function NavBar() {
                     />
                 </Drawer>
             </Breakpoint>
-            <Popover 
-                anchorEl={anchorEl} 
-                anchorOrigin={{vertical: "center", horizontal: "center"}} 
+            <Popover
+                anchorEl={anchorEl}
+                anchorOrigin={{ vertical: "center", horizontal: "center" }}
                 open={showFeedback}
                 onClose={handleFeedbackClose}
             >

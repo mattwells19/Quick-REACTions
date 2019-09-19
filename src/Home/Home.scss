@@ -25,3 +25,19 @@
         '. text .'
         '. . .';
 }
+
+.grid-container-mobile {
+    background-image: url("../Images/UNCCCrown.png");
+    background-repeat: no-repeat;
+    background-position: center center;
+    grid-template-columns: repeat(3, 1fr);
+    grid-auto-rows: minmax(100px, auto);
+    row-gap: 1em; 
+    display: grid;
+    grid-template-areas:
+        '. logo . . .'
+        'text text text . .'
+        '. social . . .'
+        '. interest . . .'
+        '. . . . .';
+}
