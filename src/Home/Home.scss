@@ -22,8 +22,7 @@
     display: grid;
     grid-template-areas:
         'social logo interest'
-        'text text text'
-        '. . .';
+        'text text text';
 }
 
 .grid-container-mobile {
@@ -35,9 +34,9 @@
     row-gap: 2rem; 
     display: grid;
     grid-template-areas:
-        '. logo . . .'
-        'text text text . .'
-        'social social social . .'
-        'interest interest interest . .'
-        '. . . . .';
+        '. logo .'
+        'text text text'
+        '. social .'
+        '. interest .'
+        '. . .';
 }

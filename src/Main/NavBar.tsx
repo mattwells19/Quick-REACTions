@@ -1,5 +1,5 @@
 import React from "react";
-import { AppBar, makeStyles, Theme, createStyles, Popover, Drawer, IconButton, Typography } from "@material-ui/core";
+import { AppBar, makeStyles, Theme, createStyles, Popover, SwipeableDrawer, IconButton, Typography } from "@material-ui/core";
 import { Menu } from "@material-ui/icons";
 import { Breakpoint } from "react-socks";
 import NavBarContent from "./NavBarContent";
@@ -29,13 +29,12 @@ const useStyles = makeStyles((theme: Theme) =>
         hamburgerMenu: {
             color: "white",
             position: "absolute",
-            left: "10px",
+            left: "2px",
             top: "10px",
         },
         mobileNavBar: {
             alignSelf: "center",
             margin: "auto",
-            paddingLeft: "30px",
         },
     }),
 );
@@ -81,13 +80,20 @@ export default function NavBar() {
                         Charlotte Area Robotics
                     </Typography>
                 </AppBar>
-                <Drawer open={showSidebar} classes={{ paper: classes.paper }} variant="persistent" anchor="left">
+                <SwipeableDrawer 
+                    onOpen={() => setShowSidebar(true)} 
+                    onClose={() => setShowSidebar(false)} 
+                    open={showSidebar} 
+                    classes={{ paper: classes.paper }} 
+                    variant="persistent" 
+                    anchor="left"
+                >
                     <NavBarContent
                         isSidebar={true}
                         handleFeedbackClick={handleFeedbackClick}
                         classes={classes}
                     />
-                </Drawer>
+                </SwipeableDrawer>
             </Breakpoint>
             <Popover
                 anchorEl={anchorEl}
