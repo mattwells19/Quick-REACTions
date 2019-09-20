@@ -4,7 +4,7 @@ import { Link } from "react-router-dom";
 import MainLogo from "../Images/CARLogoPrimary.png";
 import "./Main.scss";
 
-//Custom Tabs component for styling
+//Custom Tabs component for stylings
 const AntTabs = withStyles({
     root: {
         marginTop: "12px",
