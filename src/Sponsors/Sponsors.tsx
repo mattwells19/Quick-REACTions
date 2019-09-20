@@ -1,6 +1,11 @@
 import React from "react";
 import { Typography, Card, Paper, makeStyles, withStyles, createStyles, Theme } from "@material-ui/core";
+import support from "../Images/support.png";
 import "./Sponsors.scss";
+import Walmart from "./Walmart";
+import SolidWork from "./SolidWork";
+import Advanced from "./Advanced";
+import Ctc from "./CTC";
 
 
 const SponsorCard = withStyles({
@@ -28,6 +33,14 @@ const useStyles = makeStyles((theme: Theme) =>
             padding: "10px",
             margin: "auto",
         },
+        sideCard: {
+                maxWidth: "50rem",
+                display: "flex",
+                backgroundColor: "#212b31",
+                gridArea: "text",
+                padding: "10px",
+                margin: "auto",
+         },
         divider: {
             margin: "10px",
         },
@@ -41,25 +54,33 @@ function Sponsors() {
     return (
         //Create a div for page container
         <div className="grid-box">
+
+            <img src={support} className="support" alt="Support"/>
+            <p>- Thank you to Our Sponsors for their Support! -</p>
                 
             <SponsorCard style={{ gridArea: "walmart"}}>
-                    Walmart
-                    </SponsorCard>
+                <Walmart classes={classes} />
+            </SponsorCard>
             <SponsorCard style={{ gridArea: "solid"}}>
-                    SolidWorks Software
-                    </SponsorCard>
+                <SolidWork classes={classes} />
+            </SponsorCard>
             <SponsorCard style={{ gridArea: "adv"}}>
-                    Advanced Circuits
-                    </SponsorCard>
+                <Advanced classes={classes} />
+            </SponsorCard>
             <SponsorCard style={{ gridArea: "child"}}>
-                    Children's Theater of Charlotte
-                    </SponsorCard>
-
+                <Ctc classes={classes} />
+            </SponsorCard>
                 
-            <Paper className={classes.typeCard} elevation={3}>
-                <Typography align="center" className="more-text" variant="h3">
+            <Paper className={classes.sideCard} elevation={24}>
+                <Typography align="center" className="more-text" variant="h4">
                     Interested In Sponsoring? Please contact Sam Luu (Car-robotics@uncc.edu) for questions.
                     Sponsorships are ranked as follows:
+                </Typography>
+            </Paper>
+
+        
+            <Paper className={classes.typeCard} elevation={3}>
+                <Typography align="left" className="sponsor-type" variant="h5">
                         <ol>
                             <li>Green Level: (Under $100) With the Green Level Sponsorship, CAR will Put your company's logo on the sponsors page of our website.</li>
                             <li>Silver Level: ($100 - $250) With the Silver Level Sponsorship, CAR will give your company the same benefits as the Green Level. In addition to the website, your logo will be added to our robot for everyone to see!</li>
