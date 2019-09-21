@@ -1,6 +1,7 @@
 import React from "react";
-import { Typography, Card, Paper, makeStyles, withStyles, createStyles, Theme, Link } from "@material-ui/core";
+import { Typography, Card, Paper, makeStyles, withStyles, createStyles, Theme, Link, Divider } from "@material-ui/core";
 import support from "../Images/roboSuport.png";
+import {DocumentTitle} from "../Main/DocumentTitle";
 import "./Sponsors.scss";
 import Walmart from "./Walmart";
 import SolidWork from "./SolidWork";
@@ -29,7 +30,7 @@ const useStyles = makeStyles((theme: Theme) =>
             maxWidth: "50rem",
             display: "flex",
             backgroundColor: "#212b31",
-            gridArea: "text",
+            gridArea: "type",
             padding: "10px",
             margin: "auto",
         },
@@ -51,6 +52,10 @@ const useStyles = makeStyles((theme: Theme) =>
 function Sponsors() {
     //Call the useStyles format
     const classes = useStyles();
+
+
+    DocumentTitle({title: "Sponsors"});
+
     return (
         //Create a div for page container
         <div className="grid-box">
@@ -60,7 +65,7 @@ function Sponsors() {
             <img src={support} className="support" alt="Support"/>
 
             <Typography className="ty-text" variant="h4">
-                - Thank you to Our Sponsors for their Support! -
+                - Thank You to Our Sponsors for their Support! -
                 </Typography>
                 
             {/* Sponsors Cards */}   
@@ -78,20 +83,23 @@ function Sponsors() {
             </SponsorCard>
                 
             <Paper className={classes.sideCard} elevation={24}>
-                <Typography align="center" className="more-text" variant="h4">
+                <Typography align="left" className="more-text" variant="h5">
                     Interested In Sponsoring? Please contact Sam Luu (Car-robotics@uncc.edu) for questions.
                     Sponsorships are ranked as follows:
                 </Typography>
             </Paper>
 
         
-            <Paper className={classes.typeCard} elevation={3}>
-                <Typography align="left" className="sponsor-type" variant="h5">
-                        <ol>
-                            <li>Green Level: (Under $100) With the Green Level Sponsorship, CAR will Put your company's logo on the sponsors page of our website.</li>
-                            <li>Silver Level: ($100 - $250) With the Silver Level Sponsorship, CAR will give your company the same benefits as the Green Level. In addition to the website, your logo will be added to our robot for everyone to see!</li>
-                            <li>Gold Level: (More than $250) With the Gold Level Sponsorship, your company will recieve the benfits from the Green Silver Levels in addition to adding your logo onto our team's T-Shirts!</li>
-                        </ol>
+            <Paper className={classes.typeCard} elevation={24}>
+                <Typography align="center" className="sponsor-type" variant="h6" style={{marginLeft: 20, marginRight: 20}}>
+                        Green Level:<br/>(Under $100)<br/>With the Green<br/>Level Sponsorship,<br/>CAR will place<br/>your company's<br/>logo on the<br/>sponsors page<br/>of our website.
+                        <Divider/>
+                </Typography>
+                <Typography align="center" className="sponsor-type 1" variant="h6" style={{marginLeft: 20, marginRight: 20}}>
+                        Silver Level:<br/>($100 - $250)<br/>With the Silver<br/>Level Sponsorship,<br/>CAR will give your<br/>company the same<br/>benefits as the<br/>Green Level.<br/>In addition to the<br/>website, your logo<br/>will be added to<br/>our robot for<br/>everyone to see!
+                </Typography>
+                <Typography align="center" className="sponsor-type" variant="h6" style={{marginLeft: 20, marginRight: 20}}>        
+                        Gold Level:<br/>(More than $250)<br/>With the Gold<br/>Level Sponsorship,<br/>your company will<br/>recieve the benfits<br/>from the Green &amp;<br/>Silver Levels in<br/>addition to adding<br/>your logo onto<br/>our team's T-Shirts!
                 </Typography>
             </Paper>
 
