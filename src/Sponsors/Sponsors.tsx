@@ -1,6 +1,6 @@
 import React from "react";
-import { Typography, Card, Paper, makeStyles, withStyles, createStyles, Theme } from "@material-ui/core";
-import support from "../Images/support.png";
+import { Typography, Card, Paper, makeStyles, withStyles, createStyles, Theme, Link } from "@material-ui/core";
+import support from "../Images/roboSuport.png";
 import "./Sponsors.scss";
 import Walmart from "./Walmart";
 import SolidWork from "./SolidWork";
@@ -55,9 +55,15 @@ function Sponsors() {
         //Create a div for page container
         <div className="grid-box">
 
+            {/* Banner Image */}
+            {/*"https://www.pngkey.com/detail/u2q8i1w7q8w7e6w7_04-apr-robotic-process-automation-robot-and-human/*/}
             <img src={support} className="support" alt="Support"/>
-            <p>- Thank you to Our Sponsors for their Support! -</p>
+
+            <Typography className="ty-text" variant="h4">
+                - Thank you to Our Sponsors for their Support! -
+                </Typography>
                 
+            {/* Sponsors Cards */}   
             <SponsorCard style={{ gridArea: "walmart"}}>
                 <Walmart classes={classes} />
             </SponsorCard>

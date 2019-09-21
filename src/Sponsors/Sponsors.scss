@@ -5,7 +5,18 @@
     padding-bottom: 2rem;
     width: auto;
     height: 20rem;
+    border-radius: 180px;
     margin: auto; 
+}
+
+.ty-text {
+    grid-area: TY;
+    color: #B3A369;
+    background-color: #212b31;
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+    border-radius: 10px;
+    margin: auto;
 }
 
 .more-text {
@@ -19,11 +30,15 @@
 }
 
 .grid-box {
-    grid-template-columns: (4, 1fr);
+    background-image: url("../Images/UNCCCrown.png");
+    background-repeat: no-repeat;
+    background-position: center center;
+    grid-template-columns: (5, 1fr);
     grid-auto-rows: minmax(100px, auto);
     display: grid;
     grid-template-areas:
     '. support support .'
+    '. TY TY .'
     'walmart solid adv child'
     ' . text text .'
     ' . type type .';
@@ -32,11 +47,20 @@
 .sponsorLogo {
     opacity: 1;
     display: block;
+    padding-bottom: 1rem;
     width: 13rem;
     height: 15rem;
     margin: auto;
     transition: .5s ease;
     backface-visibility: hidden;
+
+    &:hover{
+        opacity: 0.3;
+
+        .middleWord {
+            opacity: 1;
+        }
+    }
 }
 
 .middleWord {
@@ -49,16 +73,8 @@
     -ms-transform: translate(-50%, -50%);
 }
 
-.sponsorLogo:hover {
-    opacity: 0.3;
-}
-
-.sponsorLogo:hover .middleWord {
-    opacity: 1;
-}
-
 .middleText {
     background-color: #2d855f;
     color: #B3A369;
-    padding: 16px 32px;
+    padding: 12px 22px;
 }

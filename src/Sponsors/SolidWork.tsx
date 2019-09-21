@@ -8,12 +8,10 @@ import solidLogo from "../Images/solid.jpg";
 export default function Interest(props: any) {
     const { classes } = props;
     return (
-        <Typography variant="h6">
-            <img src={solidLogo} className="sponsorLogo" alt="SolisWorks Software"/>
-                <Divider className={classes.divider} />
-                <Link style={{color: "#166837"}} href="https://www.solidworks.com/">
-                    SolidWorks® Software
-                </Link>
+        <Typography>
+            <Link style={{color: "#166837"}} href="https://www.solidworks.com/">
+                <img src={solidLogo} className="sponsorLogo" alt="SolisWorks Software"/>
+            </Link>
         </Typography>
     );
 }    

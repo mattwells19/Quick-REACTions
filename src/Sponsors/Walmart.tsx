@@ -8,14 +8,11 @@ import walmartLogo from "../Images/walmart.png";
 export default function Interest(props: any) {
     const { classes } = props;
     return (
-        <Typography variant="h6" gutterBottom>
-                <Link style={{color: "#166837"}} href="https://www.walmart.com/">
+        <Typography variant="h5">
+            <Link style={{color: "#166837"}} href="https://www.walmart.com/">
                 <img src={walmartLogo} className="sponsorLogo" alt="Walmart"/>
-                <div className="middleWord">
-                    <Typography className="middleText" variant="h5">Thank You</Typography>
-                </div>
-                
-                </Link>
+                <Typography className="middleText">Thank You</Typography>
+            </Link>
         </Typography>
     );
 }    
