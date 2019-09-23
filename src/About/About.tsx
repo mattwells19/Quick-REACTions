@@ -1,23 +1,34 @@
 import React, { Component } from "react";
-import { Typography, CardActionArea, CardMedia, CardContent, Card } from "@material-ui/core";
-import ReturningMembers from "../Images/ReturningMembers.jpg";
+import { Paper } from "@material-ui/core";
+import OfficerCard, {Officer} from "./OfficerCard";
+import IntVP from "../Images/Officers/InterimVP.jpg";
+import Outreach from "../Images/Officers/Outreach.jpg";
+import Treasurer from "../Images/Officers/Treasurer.jpg";
+import VP from "../Images/Officers/VP.jpg";
+import "./About.scss";
+
 class About extends Component {
     render() {
         return (
-            <div style={{marginTop: "5rem"}}>
-                <Card style={{maxWidth: "800px", margin: "5rem"}}>
-                    <CardActionArea>
-                        <CardMedia
-                            image={ReturningMembers}
-                            style={{height: "350px"}}
-                        />
-                            <CardContent>
-                                <Typography align="center" variant="h4">
-                                    These are our returning members!
-                                </Typography>
-                            </CardContent>
-                    </CardActionArea>
-                </Card>
+            <div className="container">
+                <Paper className="card-group">
+                    <OfficerCard
+                        image={IntVP}
+                        officer={Officer.Interim}
+                    />
+                    <OfficerCard
+                        image={Outreach}
+                        officer={Officer.Outreach}
+                    />
+                    <OfficerCard
+                        image={Treasurer}
+                        officer={Officer.Treasurer}
+                    />
+                    <OfficerCard
+                        image={VP}
+                        officer={Officer.VicePresident}
+                    />
+                </Paper>
             </div>
         );
     }
