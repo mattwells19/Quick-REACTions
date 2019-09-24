@@ -16,8 +16,8 @@ interface OfficerCardProps{
 
 export default function OfficerCard(props: OfficerCardProps){
     return(
-        <Card style={{width: "250px", margin: "20px"}}>
-            <CardActionArea>
+        <CardActionArea>
+            <Card style={{height: "400px", width: "250px", margin: "20px", backgroundColor: "#2d855f"}}>
                 <CardMedia
                     image={props.image}
                     style={{height: "300px"}}
@@ -27,7 +27,7 @@ export default function OfficerCard(props: OfficerCardProps){
                             {props.officer}
                         </Typography>
                     </CardContent>
-            </CardActionArea>
-        </Card>
+            </Card>
+        </CardActionArea>
     );
 }
