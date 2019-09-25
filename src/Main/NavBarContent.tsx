@@ -1,7 +1,7 @@
 import React from "react";
 import { Tabs, Tab, IconButton, withStyles } from "@material-ui/core";
 import { Feedback } from "@material-ui/icons";
-import { Link } from "react-router-dom";
+import { Link, Redirect } from "react-router-dom";
 import MainLogo from "../Images/CARLogoPrimary.png";
 import EasyToSeeTooltip from "./EasyToSeeTooltip";
 
@@ -50,6 +50,7 @@ export default function NavBarContent(props: NavBarContentProps) {
                 <Tab className="NavBarSelection" label="Competition" component={Link} to="/competition" />
                 <Tab className="NavBarSelection" label="Outreach" component={Link} to="/outreach" />
                 <Tab className="NavBarSelection" label="Archive" component={Link} to="/archive" />
+                <Redirect to="/"/>
             </NavTabs>
             <EasyToSeeTooltip title="Feedback Button">
                 <IconButton onClick={handleFeedbackClick} className={isSidebar ? classes.feedbackSidebar : classes.feedback}>

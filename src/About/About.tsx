@@ -33,9 +33,9 @@ class About extends Component {
                     />
                     <OfficerCard
                         image={IntVP}
-                        name="Nathan Langely"
+                        name="Nathan Langley"
                         officer={Officer.Interim}
-                        linkedIn=""
+                        linkedIn="https://www.linkedin.com/in/nathan-langley"
                     />
                     <OfficerCard
                         image={Outreach}
