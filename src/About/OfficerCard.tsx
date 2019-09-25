@@ -1,33 +1,58 @@
 import React from "react";
-import { Card, CardActionArea, CardMedia, CardContent, Typography } from "@material-ui/core";
+import { Card, CardActionArea, CardMedia, CardContent, Typography, makeStyles, Theme, createStyles, Divider } from "@material-ui/core";
+import EasyToSeeTooltip from "../Main/EasyToSeeTooltip";
 
 export enum Officer{
     President="President",
     VicePresident="Vice President",
-    Outreach="Outreach Officer",
+    Outreach="Outreach",
     Treasurer="Treasurer",
-    Interim="Interim Vice President"
+    Interim="Interim VP"
 }
 
 interface OfficerCardProps{
     image: string;
     officer: Officer;
+    linkedIn: string;
+    name: string;
 }
 
+const useStyles = makeStyles((theme: Theme) =>
+    createStyles({
+        officerCard: {
+            height: "400px",
+            width: "250px",
+            margin: "20px",
+            backgroundColor: "#2d855f",
+        },
+        officerPicture: {
+            height: "300px",
+            backgroundColor: "#212b31",
+        },
+    }),
+);
+
 export default function OfficerCard(props: OfficerCardProps){
+    const classes = useStyles();
     return(
-        <CardActionArea>
-            <Card style={{height: "400px", width: "250px", margin: "20px", backgroundColor: "#2d855f"}}>
-                <CardMedia
-                    image={props.image}
-                    style={{height: "300px"}}
-                />
-                    <CardContent>
-                        <Typography align="center" variant="h4">
-                            {props.officer}
-                        </Typography>
-                    </CardContent>
-            </Card>
-        </CardActionArea>
+        <EasyToSeeTooltip title={props.linkedIn}>
+            <CardActionArea href={props.linkedIn} target="_blank">
+                <Card className={classes.officerCard}>
+                    <CardMedia
+                        image={props.image}
+                        className={classes.officerPicture}
+                    />
+                        <CardContent>
+                            <Typography align="center" variant="h4">
+                                {props.officer}
+                            </Typography>
+                            <Divider/>
+                            <Typography align="center" variant="h5">
+                                {props.name}
+                            </Typography>
+                        </CardContent>
+                </Card>
+            </CardActionArea>
+        </EasyToSeeTooltip>
     );
 }
