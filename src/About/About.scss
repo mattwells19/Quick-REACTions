@@ -1,13 +1,26 @@
+@import "../Themes.scss";
+
 .card-group {
     margin-top: 5rem;
     margin-left: auto;
     margin-right: auto;
+    padding: 1rem;
     width: 100%;
     display: inline-flex;
-    background-color: #B3A369;
+    background-color: $school-gold;
 }
 
-.container {
+.officer-container {
     width: max-content;
     margin: 0 auto;
+}
+
+.who-we-are-container {
+    @extend .officer-container;
+    display: block;
+    max-width: 50%;
+}
+
+.what-we-do-container {
+    @extend .officer-container
 }
