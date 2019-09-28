@@ -8,6 +8,7 @@ import VP from "../Images/Officers/VP.jpg";
 import President from "../Images/Officers/President.gif";
 import "./About.scss";
 import "../Themes.scss";
+import Slideshow from "./Slideshow";
 
 const AboutBackground = withStyles({
     root: {
@@ -25,12 +26,8 @@ class About extends Component {
                         <Typography align="center" variant="h4">
                             Who we are
                         </Typography>
-                        <Typography variant="h5">
-                            We, Charlotte Area Robotics (CAR), are a Student Organization at the University of North Carolina at Charlotte.
-                            Our team is comprised solely of students and is student run with the aid of faculty advisors.
-                            Our club is affiliated with the Global IEEE Branch.
-                        </Typography>
                     </AboutBackground>
+                    <Slideshow />
                 </div>
                 <div className="what-we-do-container">
                     <AboutBackground>
