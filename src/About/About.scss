@@ -16,10 +16,39 @@
 
 .who-we-are-container {
     @extend .officer-container;
+    padding-top: 6rem;
     display: block;
-    width: auto;
 }
 
 .what-we-do-container {
-    @extend .officer-container
+    @extend .officer-container;
+    padding-top: 6rem;
+}
+
+.slideshow-container {
+    min-width: 1500px;
+    display: grid;
+    row-gap: 20px;
+    grid-template-columns: 100px 650px 650px 100px;
+    grid-template-areas:
+        '. . . .'
+        'title title title title'
+        '. divider divider .'
+        'leftArrow text content rightArrow'
+        '. . . .';
+    transition: all ease-in-out 0.5s;
+}
+
+.slideshow-leftArrow {
+    height: 50px;
+    width: 50px;
+    align-self: center;
+    grid-area: leftArrow;
+}
+
+.slideshow-rightArrow {
+    height: 50px;
+    width: 50px;
+    align-self: center;
+    grid-area: rightArrow;
 }

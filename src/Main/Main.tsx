@@ -13,6 +13,11 @@ import NavBar from "./NavBar";
 
 const theme = createMuiTheme({
   typography: {
+    h3: {
+      fontFamily: "Inconsolata",
+      fontSize: "2.5rem",
+      fontWeight: 700,
+    },
     h4: {
       fontFamily: "Inconsolata",
       fontSize: "1.75rem",
@@ -42,7 +47,7 @@ class Main extends Component {
                 <Route path="/sponsors" component={Sponsors} />
                 <Route path="/competition" component={Competition} />
                 <Route path="/archive" component={Archive} />
-                <Route component={Home}/>
+                <Route component={Home} />
               </Switch>
             </div>
           </BrowserRouter>

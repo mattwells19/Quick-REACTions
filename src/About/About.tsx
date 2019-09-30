@@ -1,6 +1,6 @@
 import React, { Component } from "react";
-import { Paper, withStyles, Typography } from "@material-ui/core";
-import OfficerCard, {Officer} from "./OfficerCard";
+import { Paper, withStyles } from "@material-ui/core";
+import OfficerCard, { Officer } from "./OfficerCard";
 import IntVP from "../Images/Officers/InterimVP.jpg";
 import Outreach from "../Images/Officers/Outreach.jpg";
 import Treasurer from "../Images/Officers/Treasurer.jpg";
@@ -14,6 +14,7 @@ const AboutBackground = withStyles({
     root: {
         backgroundColor: "#B3A369",
         display: "block",
+        width: "max-content",
     },
 })(Paper);
 
@@ -22,22 +23,10 @@ class About extends Component {
         return (
             <>
                 <div className="who-we-are-container">
-                    <AboutBackground className="card-group">
-                        <Typography align="center" variant="h4">
-                            Who we are
-                        </Typography>
-                    </AboutBackground>
                     <Slideshow />
                 </div>
-                <div className="what-we-do-container">
-                    <AboutBackground>
-                        <Typography variant="h4">
-                            What we do
-                        </Typography>
-                    </AboutBackground>
-                </div>
                 <div className="officer-container">
-                    <AboutBackground style={{display: "flex"}} elevation={24} className="card-group">
+                    <AboutBackground style={{ display: "flex" }} elevation={24} className="card-group">
                         <OfficerCard
                             image={President}
                             name="Nathaniel Belles"
