@@ -7,7 +7,8 @@ export enum Officer{
     VicePresident="Vice President",
     Outreach="Outreach",
     Treasurer="Treasurer",
-    Interim="Interim VP"
+    Interim="Interim VP",
+    Developer="Developer"
 }
 
 interface OfficerCardProps{
@@ -23,11 +24,11 @@ const useStyles = makeStyles((theme: Theme) =>
             height: "400px",
             width: "250px",
             margin: "20px",
-            backgroundColor: "#2d855f",
+            backgroundColor: "#B3A369",
         },
         officerPicture: {
             height: "300px",
-            backgroundColor: "#212b31",
+            backgroundColor: "#424242",
         },
     }),
 );

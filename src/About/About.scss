@@ -1,28 +1,29 @@
 @import "../Themes.scss";
 
 .card-group {
-    margin-top: 5rem;
-    margin-left: auto;
-    margin-right: auto;
-    width: 100%;
-    display: inline-flex;
-    background-color: $school-gold;
+    margin: 5rem auto;
+    display: grid;
+    row-gap: 20px;
+    grid-template-columns: 100px 650px 650px 100px;
+    grid-template-areas: 
+    '. . . .'
+    't t t t'
+    '. d d .'
+    'c c c c'
+    '. . . .';
 }
 
-.officer-container {
+.card-container {
     width: max-content;
     margin: 0 auto;
+    display: flex;
+    grid-area: c;
 }
 
 .who-we-are-container {
-    @extend .officer-container;
+    @extend .card-container;
     padding-top: 6rem;
     display: block;
-}
-
-.what-we-do-container {
-    @extend .officer-container;
-    padding-top: 6rem;
 }
 
 .slideshow-container {
@@ -36,7 +37,6 @@
         '. divider divider .'
         'leftArrow text content rightArrow'
         '. . . .';
-    transition: all ease-in-out 0.5s;
 }
 
 .slideshow-leftArrow {
