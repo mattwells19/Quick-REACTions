@@ -2,39 +2,42 @@
     background-color: #B3A369;
     grid-area: support;
     display: block;
-    padding-top: 0rem;
-    padding-bottom: 1rem;
-    width: auto;
-    height: 20rem;
+    padding-top: 2rem;
+    width: 37rem;
+    height: 16rem;
     border-radius: 180px;
-    margin: auto;
+    margin-top: 5.5rem;
+    margin-right: auto;
+    margin-left: auto;
+    color: #212b31;
+    box-shadow: inset 0px 0px 50px 30px;
+
 }
 
 .ty-text {
     grid-area: TY;
     color: #B3A369;
     background-color: #212b31;
-    padding-top: 2rem;
+    padding-top: 1rem;
     padding-bottom: 1rem;
     border-radius: 10px;
     margin: auto;
     text-align: center;
 }
 
-.more-text {
+.contactTxt {
     grid-area: text;
-    color: #B3A369;
-    margin: auto;
+    color: #212b31;
+    margin-top: 5rem;
+    margin-bottom: 5rem;
+    margin-left: 5rem;
+    margin-right: 5rem;
 }
 
 .sponsor-type {
     grid-area: type;
     color: #B3A369;
     margin: auto;
-
-    &:hover {
-        color: #2d855f;
-    }
 }
 
 .grid-box {
@@ -51,19 +54,21 @@
     'support support support support'
     'TY TY TY TY'
     'walmart solid adv child'
-    ' . type type .'
-    ' text text text text';
+    ' text text . .'
+    ' . type type type';
 }
 
 .sponsorLogo {
     opacity: 1;
     display: block;
-    padding-bottom: 1rem;
     width: 13rem;
     height: 15rem;
-    margin: auto;
     transition: .5s ease;
     backface-visibility: hidden;
+    border-style: solid;
+    border-radius: 10px;
+    border-width: 12px;
+    border-color: #B3A369;
 
     &:hover{
         opacity: 0.3;

@@ -1,5 +1,5 @@
 import React from "react";
-import { Typography, Card, Paper, makeStyles, withStyles, createStyles, Theme, Link, Divider } from "@material-ui/core";
+import { Typography, Card, Paper, makeStyles, withStyles, createStyles, Theme, Divider } from "@material-ui/core";
 import support from "../Images/roboSuport.png";
 import {DocumentTitle} from "../Main/DocumentTitle";
 import "./Sponsors.scss";
@@ -13,12 +13,10 @@ const SponsorCard = withStyles({
     root: {
          display: "flex",
          padding: "10px",
-         maxWidth: "15rem",
+         minWidth: "250px",
          fontFamily: "Inconsolata",
-         backgroundColor: "#B3A369",
-         color: "#212b31",
-         margin: "auto",
          textAlign: "center",
+         backgroundColor: "inherit",
          borderRadius: "1rem",
         },
 })(Card);
@@ -26,6 +24,13 @@ const SponsorCard = withStyles({
 const useStyles = makeStyles((theme: Theme) =>
     createStyles({
         //Format sponsorType card
+        TYCard: {
+            display: "flex",
+            backgroundColor: "#212b31",
+            gridArea: "TY",
+            padding: "10px",
+            margin: "auto",
+        },
         typeCard: {
             maxWidth: "50rem",
             display: "flex",
@@ -35,10 +40,10 @@ const useStyles = makeStyles((theme: Theme) =>
             margin: "auto",
         },
         sideCard: {
-                maxWidth: "50rem",
+                gridArea: "text",
                 display: "flex",
-                backgroundColor: "#212b31",
-                gridArea: "text",
+                backgroundColor: "#B3A369",
+                color: "#212b31",
                 padding: "10px",
                 margin: "auto",
          },
@@ -64,9 +69,11 @@ function Sponsors() {
             {/*"https://www.pngkey.com/detail/u2q8i1w7q8w7e6w7_04-apr-robotic-process-automation-robot-and-human/*/}
             <img src={support} className="support" alt="Support"/>
 
+            <Paper className={classes.TYCard} elevation={24}>
             <Typography className="ty-text" variant="h4">
-                - Thank You to Our Sponsors for their Support! -
+                - Thank You To Our Sponsors For Their Support! -
                 </Typography>
+            </Paper>
                 
             {/* Sponsors Cards */}   
             <SponsorCard style={{ gridArea: "walmart"}}>
@@ -83,7 +90,7 @@ function Sponsors() {
             </SponsorCard>
                 
             <Paper className={classes.sideCard} elevation={24}>
-                <Typography align="left" className="more-text" variant="h5">
+                <Typography align="left" className="contactTxt" variant="h5">
                     Interested In Sponsoring? Please contact Sam Luu (Car-robotics@uncc.edu) for questions.
                     Sponsorships are ranked as follows:
                 </Typography>
@@ -91,14 +98,14 @@ function Sponsors() {
 
         
             <Paper className={classes.typeCard} elevation={24}>
-                <Typography align="center" className="sponsor-type" variant="h6" style={{marginLeft: 20, marginRight: 20}}>
+                <Typography align="center" className="sponsor-type" variant="h5" style={{marginLeft: 20, marginRight: 20}}>
                         Green Level:<br/>(Under $100)<br/>With the Green<br/>Level Sponsorship,<br/>CAR will place<br/>your company's<br/>logo on the<br/>sponsors page<br/>of our website.
                         <Divider/>
                 </Typography>
-                <Typography align="center" className="sponsor-type 1" variant="h6" style={{marginLeft: 20, marginRight: 20}}>
+                <Typography align="center" className="sponsor-type 1" variant="h5" style={{marginLeft: 20, marginRight: 20}}>
                         Silver Level:<br/>($100 - $250)<br/>With the Silver<br/>Level Sponsorship,<br/>CAR will give your<br/>company the same<br/>benefits as the<br/>Green Level.<br/>In addition to the<br/>website, your logo<br/>will be added to<br/>our robot for<br/>everyone to see!
                 </Typography>
-                <Typography align="center" className="sponsor-type" variant="h6" style={{marginLeft: 20, marginRight: 20}}>        
+                <Typography align="center" className="sponsor-type" variant="h5" style={{marginLeft: 20, marginRight: 20}}>        
                         Gold Level:<br/>(More than $250)<br/>With the Gold<br/>Level Sponsorship,<br/>your company will<br/>recieve the benfits<br/>from the Green &amp;<br/>Silver Levels in<br/>addition to adding<br/>your logo onto<br/>our team's T-Shirts!
                 </Typography>
             </Paper>
