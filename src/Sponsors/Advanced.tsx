@@ -11,7 +11,7 @@ export default function Interest(props: any) {
         <Typography>
             <EasyToSeeTooltip title="https://www.4pcb.com/">
             <Link style={{color: "#166837"}} href="https://www.4pcb.com/">
-                <img src={advLogo} className="sponsorLogo" alt="Advanced Circuits"/>
+                <img src={advLogo} className="sponsorLogo borderColorGreen" alt="Advanced Circuits"/>
             </Link>
             </EasyToSeeTooltip>
         </Typography>

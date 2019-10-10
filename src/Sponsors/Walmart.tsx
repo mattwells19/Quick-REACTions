@@ -10,8 +10,7 @@ export default function Interest(props: any) {
     return (
         <Typography>
             <Link style={{color: "#166837"}} href="https://www.walmart.com/">
-                <img src={walmartLogo} className="sponsorLogo" alt="Walmart"/>
-                <Typography className="middleText">Thank You</Typography>
+                <img src={walmartLogo} className="sponsorLogo borderColorGold" alt="Walmart"/>
             </Link>
         </Typography>
     );

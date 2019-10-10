@@ -1,17 +1,36 @@
-.support {
-    background-color: #B3A369;
-    grid-area: support;
-    display: block;
-    padding-top: 2rem;
-    width: 37rem;
-    height: 16rem;
-    border-radius: 180px;
-    margin-top: 5.5rem;
-    margin-right: auto;
-    margin-left: auto;
-    color: #212b31;
-    box-shadow: inset 0px 0px 50px 30px;
+//Setup Webpage grid
+.grid-box {
+    background-image: url("../Images/UNCCCrown.png");
+    background-repeat: no-repeat;
+    background-position: center center;
+    display: grid;
+    grid-template-columns: (4, 1fr);
+    grid-auto-rows: minmax(100px, auto);
+    margin: 0 auto;
+    grid-gap: 10px;
+    grid-template-areas:
+    'banner banner banner banner'
+    'TY TY TY TY'
+    'handshake handshake handshake handshake'
+    'tSection tSection tSection tSection'
+    'tSection2 tSection2 tSection2 tSection2'
+    'tSection3 tSection3 tSection3 tSection3'
+    'text text . .';
+}
 
+//Banner image
+.banner {
+    grid-area: banner;
+    display: block;
+    width: 100%;
+    min-height: 350px;
+    max-height: 600px;
+    margin: auto;
+}
+
+img {
+    vertical-align: middle;
+    border-style: none;
 }
 
 .ty-text {
@@ -25,37 +44,62 @@
     text-align: center;
 }
 
-.contactTxt {
-    grid-area: text;
+.handshakeImg {
+    background-color: #B3A369;
+    grid-area: handshake;
+    display: block;
+    width: 37rem;
+    height: 16rem;
+    border-radius: 180px;
+    margin-bottom: 1rem;
+    margin-right: auto;
+    margin-left: auto;
     color: #212b31;
-    margin-top: 5rem;
-    margin-bottom: 5rem;
-    margin-left: 5rem;
-    margin-right: 5rem;
+    box-shadow: inset 0px 0px 50px 30px;
 }
 
-.sponsor-type {
-    grid-area: type;
+
+.typeSectionClass {
+    grid-area: tSection;
     color: #B3A369;
-    margin: auto;
+    background-color: #212b31;
+    width: 100%;
 }
 
-.grid-box {
-    background-image: url("../Images/UNCCCrown.png");
-    background-repeat: no-repeat;
-    background-position: center center;
+//Sponsor Type Grid Setup
+.typeSection-Grid {
     display: grid;
     grid-template-columns: (4, 1fr);
     grid-auto-rows: minmax(100px, auto);
-    max-width: 1100px;
-    margin: 0 auto;
+    width: 100%;
     grid-gap: 10px;
     grid-template-areas:
-    'support support support support'
-    'TY TY TY TY'
-    'walmart solid adv child'
-    ' text text . .'
-    ' . type type type';
+    'desc gSpon1 gSpon2 gSpon3'
+    'desc gSpon1 gSpon2 gSpon3';
+}
+
+//Sponsor Type Grid Setup from Oposite Site (Optional)
+.typeSectionOps-Grid {
+    display: grid;
+    grid-template-columns: (4, 1fr);
+    grid-auto-rows: minmax(100px, auto);
+    width: 100%;
+    grid-gap: 10px;
+    grid-template-areas:
+    'gSpon3 gSpon2 gSpon1 desc'
+    'gSpon3 gSpon2 gSpon1 desc';
+}
+
+.desc {
+    grid-area: desc;
+    background-color: #212b31;
+    max-width: 20rem;
+    height: 20rem;
+    padding-top: 2rem;
+}
+
+li {
+    text-align: left;
 }
 
 .sponsorLogo {
@@ -68,7 +112,6 @@
     border-style: solid;
     border-radius: 10px;
     border-width: 12px;
-    border-color: #B3A369;
 
     &:hover{
         opacity: 0.3;
@@ -93,4 +136,39 @@
     background-color: #2d855f;
     color: #B3A369;
     padding: 12px 22px;
+}
+
+//Color Tags 
+.cGold {
+    color: #B3A369;
+}
+
+.cSilver {
+    color: #A9A9A9;
+}
+
+.cGreen {
+    color: #2d855f;
+}
+.borderColorGold
+{
+    border-color: #B3A369;
+}
+.borderColorSilver
+{
+    border-color: #A9A9A9;
+}
+.borderColorGreen
+{
+    border-color: #2d855f;
+}
+
+//Contact Info 
+.contactTxt {
+    grid-area: text;
+    color: #212b31;
+    margin-top: 5rem;
+    margin-bottom: 5rem;
+    margin-left: 5rem;
+    margin-right: 5rem;
 }

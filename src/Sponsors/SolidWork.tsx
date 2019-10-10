@@ -11,7 +11,7 @@ export default function Interest(props: any) {
         <Typography>
             <EasyToSeeTooltip title="https://www.solidworks.com/">
             <Link href="https://www.solidworks.com/">
-                <img src={solidLogo} className="sponsorLogo" alt="SolisWorks Software"/>
+                <img src={solidLogo} className="sponsorLogo borderColorGold" alt="SolisWorks Software"/>
             </Link>
             </EasyToSeeTooltip>
         </Typography>

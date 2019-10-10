@@ -11,7 +11,7 @@ export default function Interest(props: any) {
         <Typography>
             <EasyToSeeTooltip title="https://www.ctcharlotte.org/Online/default.asp">
             <Link style={{color: "#166837"}} href="https://www.ctcharlotte.org/Online/default.asp">
-                <img src={ctcLogo} className="sponsorLogo" alt="Advanced Circuits"/>
+                <img src={ctcLogo} className="sponsorLogo borderColorSilver" alt="Advanced Circuits"/>
             </Link>
             </EasyToSeeTooltip>
         </Typography>

@@ -1,12 +1,15 @@
 import React from "react";
-import { Typography, Card, Paper, makeStyles, withStyles, createStyles, Theme, Divider } from "@material-ui/core";
+import { Typography, Card, Paper, makeStyles, withStyles, createStyles, Theme, Divider, Link } from "@material-ui/core";
+import { Email } from "@material-ui/icons";
 import support from "../Images/roboSuport.png";
+import bannerImg from "../Images/banner.jpg";
 import {DocumentTitle} from "../Main/DocumentTitle";
 import "./Sponsors.scss";
 import Walmart from "./Walmart";
 import SolidWork from "./SolidWork";
 import Advanced from "./Advanced";
 import Ctc from "./CTC";
+import JoinTeam from "./JoinTeam";
 
 
 const SponsorCard = withStyles({
@@ -18,6 +21,8 @@ const SponsorCard = withStyles({
          textAlign: "center",
          backgroundColor: "inherit",
          borderRadius: "1rem",
+         margin: "auto",
+         alignItems: "Center",
         },
 })(Card);
 
@@ -31,14 +36,30 @@ const useStyles = makeStyles((theme: Theme) =>
             padding: "10px",
             margin: "auto",
         },
-        typeCard: {
-            maxWidth: "50rem",
-            display: "flex",
-            backgroundColor: "#212b31",
-            gridArea: "type",
-            padding: "10px",
-            margin: "auto",
-        },
+        sectionCard: {
+            display: "flex",
+            backgroundColor: "#212b31",
+            gridArea: "tSection",
+            padding: "10px",
+            width: '100%',
+            margin: "auto",
+        },
+        section2Card: {
+            display: "flex",
+            backgroundColor: "#212b31",
+            gridArea: "tSection2",
+            padding: "10px",
+            width: '100%',
+            margin: "auto",
+        },
+        section3Card: {
+            display: "flex",
+            backgroundColor: "#212b31",
+            gridArea: "tSection3",
+            padding: "10px",
+            width: '100%',
+            margin: "auto",
+        },
         sideCard: {
                 gridArea: "text",
                 display: "flex",
@@ -66,47 +87,85 @@ function Sponsors() {
         <div className="grid-box">
 
             {/* Banner Image */}
-            {/*"https://www.pngkey.com/detail/u2q8i1w7q8w7e6w7_04-apr-robotic-process-automation-robot-and-human/*/}
-            <img src={support} className="support" alt="Support"/>
+            <img src={bannerImg} className="banner" alt="Banner"/>
 
+            {/* Thank You Text */}
             <Paper className={classes.TYCard} elevation={24}>
             <Typography className="ty-text" variant="h4">
                 - Thank You To Our Sponsors For Their Support! -
                 </Typography>
             </Paper>
-                
+
+            {/* HandShake Image */}
+            {/*"https://www.pngkey.com/detail/u2q8i1w7q8w7e6w7_04-apr-robotic-process-automation-robot-and-human/*/}
+            <img src={support} className="handshakeImg" alt="HandShake"/>
+
+            {/* Sponsors Section */}
+            <Paper className={classes.sectionCard} elevation={24}>
+            <div className="typeSection-Grid">
+            {/* Gold Sponsors Description */}
+            <Typography align="center" className="desc cGold" variant="h5" style={{marginLeft: 20, marginRight: 20}}>
+                Gold Level:<br/>(More than $250)<br/>With the Gold Level Sponsorship, your company will recieve the benfits from the Green &amp; Silver Levels in addition to adding your logo onto our team's T-Shirts!
+                </Typography>
             {/* Sponsors Cards */}   
-            <SponsorCard style={{ gridArea: "walmart"}}>
+            <SponsorCard style={{ gridArea: "gSpon1"}}>
                 <Walmart classes={classes} />
             </SponsorCard>
-            <SponsorCard style={{ gridArea: "solid"}}>
+            <SponsorCard style={{ gridArea: "gSpon2"}}>
                 <SolidWork classes={classes} />
             </SponsorCard>
-            <SponsorCard style={{ gridArea: "adv"}}>
-                <Advanced classes={classes} />
+            <SponsorCard style={{ gridArea: "gSpon3"}}>
+                <SolidWork classes={classes} />
             </SponsorCard>
-            <SponsorCard style={{ gridArea: "child"}}>
+
+            </div>
+            </Paper>
+
+            <Paper className={classes.section2Card} elevation={24}>
+            <div className="typeSection-Grid">
+            {/* Silver Sponsors Description */}
+            <Typography align="center" className="desc cSilver" variant="h5" style={{marginLeft: 20, marginRight: 20}}>
+            Silver Level:<br/>($100 - $250)<br/>
+            <ul>
+                <li>Logo and link to Website displayed on the CAR Website</li>
+                <li>Logo on any of our Robots</li>
+                <li>A shout out before any Robot Demonstrations</li>
+            </ul>
+                </Typography>
+            {/* Sponsors Cards */}   
+            <SponsorCard style={{ gridArea: "gSpon1"}}>
                 <Ctc classes={classes} />
             </SponsorCard>
+            <SponsorCard style={{ gridArea: "gSpon2"}}>
+                <JoinTeam classes={classes} />
+            </SponsorCard>
+            </div>
+            </Paper>
+
+            <Paper className={classes.section3Card} elevation={24}>
+            <div className="typeSection-Grid">
+            {/* Green Sponsors Description */}
+            <Typography align="center" className="desc cGreen" variant="h5" style={{marginLeft: 20, marginRight: 20}}>
+                        Green Level:<br/>(Under $100)
+                        <ul>
+                            <li>Logo &amp; Link To Company Website Will Be Displayed On CAR Website</li>
+                        </ul>
+                </Typography>
+            {/* Sponsors Cards */}   
+            <SponsorCard style={{ gridArea: "gSpon1"}}>
+                <Advanced classes={classes} />
+            </SponsorCard>
+
+            </div>
+            </Paper>    
                 
             <Paper className={classes.sideCard} elevation={24}>
                 <Typography align="left" className="contactTxt" variant="h5">
-                    Interested In Sponsoring? Please contact Sam Luu (Car-robotics@uncc.edu) for questions.
-                    Sponsorships are ranked as follows:
-                </Typography>
-            </Paper>
-
-        
-            <Paper className={classes.typeCard} elevation={24}>
-                <Typography align="center" className="sponsor-type" variant="h5" style={{marginLeft: 20, marginRight: 20}}>
-                        Green Level:<br/>(Under $100)<br/>With the Green<br/>Level Sponsorship,<br/>CAR will place<br/>your company's<br/>logo on the<br/>sponsors page<br/>of our website.
-                        <Divider/>
-                </Typography>
-                <Typography align="center" className="sponsor-type 1" variant="h5" style={{marginLeft: 20, marginRight: 20}}>
-                        Silver Level:<br/>($100 - $250)<br/>With the Silver<br/>Level Sponsorship,<br/>CAR will give your<br/>company the same<br/>benefits as the<br/>Green Level.<br/>In addition to the<br/>website, your logo<br/>will be added to<br/>our robot for<br/>everyone to see!
-                </Typography>
-                <Typography align="center" className="sponsor-type" variant="h5" style={{marginLeft: 20, marginRight: 20}}>        
-                        Gold Level:<br/>(More than $250)<br/>With the Gold<br/>Level Sponsorship,<br/>your company will<br/>recieve the benfits<br/>from the Green &amp;<br/>Silver Levels in<br/>addition to adding<br/>your logo onto<br/>our team's T-Shirts!
+                    Interested In Sponsoring?<br/>
+                    <Link color="inherit" style={{ textDecoration: "none" }} href="mailto:car-robotics@uncc.edu"> 
+                    Please Contact Sam Luu  {<Email className="icon" fontSize="large" />}<br/>
+                    for questions.
+                    </Link> 
                 </Typography>
             </Paper>
 
