@@ -29,6 +29,7 @@ const useStyles = makeStyles((theme: Theme) =>
             gridArea: "text",
             padding: "10px",
             margin: "auto",
+            verticalAlign: "middle",
         },
         divider: {
             margin: "10px",
@@ -45,28 +46,26 @@ function Home() {
     DocumentTitle({title: "Home"});
 
     return (
-        <div className={width > 1000 ? "grid-container" : "grid-container-mobile"}>
-        
-            <SideCard style={{ gridArea: "social", maxWidth: max_width, marginLeft: card_margin, marginRight: card_margin}}>
-                <Social classes={classes} />
-            </SideCard>
-
-            <img src={logo} className="logo" alt="Logo" />
-
-            <SideCard style={{ gridArea: "interest", maxWidth: max_width, marginLeft: card_margin, marginRight: card_margin}}>
-                <Interest classes={classes} />
-            </SideCard>
-
-            <Paper className={classes.missionCard} elevation={24} style={{marginLeft: card_margin, marginRight: card_margin}}>
-                <Typography align="center" className="more-text" variant="h4">
-                    Our mission is to educate and to learn about all aspects of mobile robotics.
-                    From the novice to the experienced, we welcome all students who are excited
-                    to learn more about the field of robotics and apply the concepts they learn
-                    in the classroom to real world applications.
+        <>
+            <div className="electrical">
+                <img src={logo} className="logo" alt="Logo" />
+            </div>
+            <div className="mechanical">
+                <Paper className={classes.missionCard} elevation={24} style={{marginLeft: card_margin, marginRight: card_margin}}>
+                    <Typography align="center" className="more-text" variant="h3">
+                        Our mission is to educate and to learn about all aspects of mobile robotics.
+                        From the novice to the experienced, we welcome all students who are excited
+                        to learn more about the field of robotics and apply the concepts they learn
+                        in the classroom to real world applications.
+                    </Typography>
+                </Paper>
+            </div>
+            <div className="computer">
+                <Typography>
+                    Cool stuff
                 </Typography>
-            </Paper>
-
-        </div>
+            </div>
+        </>
     );
 }
 

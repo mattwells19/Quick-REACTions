@@ -1,15 +1,14 @@
 .logo {
     grid-area: logo;
     display: block;
-    padding-top: 6rem;
-    padding-bottom: 2rem;
-    width: 25rem;
-    height: 25rem;
+    max-width: 40rem;
+    max-height: 40rem;
+    height: inherit;
     margin: auto;
+    opacity: 0.8;
 }
 
 .more-text {
-    grid-area: text;
     color: #B3A369;
 }
 
@@ -25,18 +24,29 @@
         'text text text';
 }
 
-.grid-container-mobile {
-    background-image: url("../Images/UNCCCrown.png");
+.electrical {
+    height: 100vh;
+    background-image: url("../Images/Electrical.jpg");
     background-repeat: no-repeat;
     background-position: center center;
-    grid-template-columns: repeat(3, 1fr);
-    grid-auto-rows: minmax(100px, auto);
-    row-gap: 2rem; 
-    display: grid;
-    grid-template-areas:
-        '. logo .'
-        'text text text'
-        '. social .'
-        '. interest .'
-        '. . .';
+    padding-top: 6rem;
+    padding-bottom: 1rem;
+    background-size: cover;
+}
+
+.mechanical {
+    background-image: url("../Images/Mechanical.jpg");
+    background-repeat: no-repeat;
+    background-position: center center;
+    height: 100vh;
+    background-size: cover;
+    display: flex;
+}
+
+.computer {
+    background-image: url("../Images/Code.jpg");
+    background-repeat: no-repeat;
+    background-position: center center;
+    height: 100vh;
+    background-size: cover;
 }

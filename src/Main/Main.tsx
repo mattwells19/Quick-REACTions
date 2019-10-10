@@ -13,6 +13,11 @@ import NavBar from "./NavBar";
 
 const theme = createMuiTheme({
   typography: {
+    h3: {
+      fontFamily: "Inconsolata",
+      fontSize: "2rem",
+      fontWeight: 700,
+    },
     h4: {
       fontFamily: "Inconsolata",
       fontSize: "1.75rem",
