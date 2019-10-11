@@ -11,11 +11,12 @@
     grid-template-areas:
     'banner banner banner banner'
     'TY TY TY TY'
-    'handshake handshake handshake handshake'
+    '. . handshake handshake'
+    'text text handshake handshake'
     'tSection tSection tSection tSection'
     'tSection2 tSection2 tSection2 tSection2'
     'tSection3 tSection3 tSection3 tSection3'
-    'text text . .';
+    '. . . .';
 }
 
 //Banner image
@@ -58,7 +59,6 @@ img {
     box-shadow: inset 0px 0px 50px 30px;
 }
 
-
 .typeSectionClass {
     grid-area: tSection;
     color: #B3A369;
@@ -92,7 +92,6 @@ img {
 
 .desc {
     grid-area: desc;
-    background-color: #212b31;
     max-width: 20rem;
     height: 20rem;
     padding-top: 2rem;
@@ -100,6 +99,17 @@ img {
 
 li {
     text-align: left;
+}
+
+.container {
+    position: relative;
+    width: 50%;
+
+    &:hover {
+        .overlay {
+            width: 14rem;
+        }
+    }
 }
 
 .sponsorLogo {
@@ -112,33 +122,33 @@ li {
     border-style: solid;
     border-radius: 10px;
     border-width: 12px;
-
-    &:hover{
-        opacity: 0.3;
-
-        .middleWord {
-            opacity: 1;
-        }
-    }
 }
 
-.middleWord {
+.overlay {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    opacity: .9;
+    overflow: hidden;
+    width: 0;
+    height: 100%;
     transition: .5s ease;
-    opacity: 0;
+}
+
+.middleText {
+    font-size: 20px;
     position: absolute;
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
-    -ms-transform: translate(-50%, -50%);
-}
-
-.middleText {
-    background-color: #2d855f;
-    color: #B3A369;
-    padding: 12px 22px;
+    white-space: nowrap;
 }
 
 //Color Tags 
+.cBlack {
+    color: #212b31;
+}
 .cGold {
     color: #B3A369;
 }
@@ -149,6 +159,11 @@ li {
 
 .cGreen {
     color: #2d855f;
+}
+
+//Border Color Tags
+.borderColorBlack {
+    border-color: #212b31;
 }
 .borderColorGold
 {
@@ -161,6 +176,23 @@ li {
 .borderColorGreen
 {
     border-color: #2d855f;
+}
+
+//Hover Color
+.backgroundBlack {
+    background-color: #212b31;
+}
+.backgroundGold
+{
+    background-color: #B3A369;
+}
+.backgroundSilver
+{
+    background-color: #A9A9A9;
+}
+.backgroundGreen
+{
+    background-color: #2d855f;
 }
 
 //Contact Info 

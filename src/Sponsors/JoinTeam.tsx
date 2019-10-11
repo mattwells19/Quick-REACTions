@@ -1,15 +1,18 @@
 import React from "react";
 import { Typography } from "@material-ui/core";
-import EasyToSeeTooltip from "../Main/EasyToSeeTooltip";
 import "./Sponsors.scss";
 import joinTeam from "../Images/joinTeam.png";
 
 
 export default function Interest(props: any) {
-    const { classes } = props;
     return (
         <Typography>
-                <img src={joinTeam} className="sponsorLogo borderColorGold" alt="Join Team"/>
+            <div className="container">
+                <img src={joinTeam} className="sponsorLogo borderColorBlack" alt="Join Team"/>
+                    <div className = "overlay backgroundBlack">
+                        <div className = "middleText cGold">You Could Be Here<br/>Join The Team</div>
+                    </div>
+            </div>
         </Typography>
     );
 }
