@@ -30,11 +30,13 @@ const useStyles = makeStyles((theme: Theme) =>
     createStyles({
         //Format sponsorType card
         TYCard: {
-            display: "flex",
+            display: "initial",
             backgroundColor: "#212b31",
             gridArea: "TY",
+            textAlign: "center",
             padding: "10px",
             margin: "auto",
+            width: "75rem",
         },
         sectionCard: {
             display: "flex",
@@ -77,7 +79,7 @@ const useStyles = makeStyles((theme: Theme) =>
             padding: "10px",
             margin: "auto",
             marginLeft: "0",
-            marginRight: "3.5rem",
+            marginRight: "0rem",
             width: "19rem",
          },
         divider: {
@@ -180,7 +182,7 @@ function Sponsors() {
                 <Typography align="left" className="contactTxt" variant="h5">
                     Interested In Sponsoring?<br/>
                     <Link color="inherit" style={{ textDecoration: "none" }} href="mailto:car-robotics@uncc.edu"> 
-                    Please Contact Sam Luu  {<Email className="icon" fontSize="large" />}
+                    Please Contact<br/>Sam Luu  {<Email className="icon" fontSize="large" />}
                     </Link> 
                 </Typography>
             </Paper>
