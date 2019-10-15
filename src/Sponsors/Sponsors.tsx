@@ -55,7 +55,7 @@ const useStyles = makeStyles((theme: Theme) =>
             gridArea: "tSection2",
             padding: "10px",
             width: '100%',
-            height: '26rem',
+            height: '27rem',
             margin: "auto",
         },
         section3Card: {
@@ -113,7 +113,12 @@ function Sponsors() {
             <div className="typeSection-Grid">
             {/* GOLD Sponsors Description */}
             <Typography align="center" className="desc cBlack" variant="h5" style={{marginLeft: 20, marginRight: 20}}>
-                Gold Level:<br/>(More than $250)<br/>With the Gold Level Sponsorship, your company will recieve the benfits from the Green &amp; Silver Levels in addition to adding your logo onto our team's T-Shirts!
+                <p className="secTitle">Gold Level:<br/>($250+)</p><p className="leftAlign">Includes:</p>
+                <ul>
+                    <li>Your Companys Logo On Clubs Shirts</li>
+                    <li>Logo On Club Merchendise</li>
+                    <li>Same Benefits As The Silver &amp; Green level Sponsorship</li>
+                </ul>
                 </Typography>
             {/* GOLD Sponsors Cards */}   
             <SponsorCard style={{ gridArea: "gSpon1"}}>
@@ -133,11 +138,11 @@ function Sponsors() {
             <div className="typeSection-Grid">
             {/* Silver Sponsors Description */}
             <Typography align="center" className="desc cBlack" variant="h5" style={{marginLeft: 20, marginRight: 20}}>
-            Silver Level:<br/>($100 - $250)<br/>
+            <p className="secTitle">Silver Level:<br/>($100+)</p><p className="leftAlign">Includes:</p>
             <ul>
-                <li>Logo &amp; Link To Your Company's Website Will Be Displayed Our Website</li>
-                <li>Logo on any of our Robots</li>
+                <li>Logo On All Of Our Robots</li>
                 <li>A shout out before any Robot Public Demonstrations</li>
+                <li>Same Benefits as the Green level Sponsorship</li>
             </ul>
                 </Typography>
             {/* Sponsors Cards */}   
@@ -155,9 +160,9 @@ function Sponsors() {
             <div className="typeSection-Grid">
             {/* Green Sponsors Description */}
             <Typography align="center" className="desc cBlack" variant="h5" style={{marginLeft: 20, marginRight: 20}}>
-                        Green Level:<br/>(Under $100)
+                        <p className="secTitle">Green Level:<br/>(-$100)</p><p className="leftAlign">Includes:</p>
                         <ul>
-                            <li>Logo &amp; Link To Your Company's Website Will Be Displayed Our Website</li>
+                            <li>Logo &amp; Link To Your Company's Website Will Be Displayed On CAR'S Sponsors Page</li>
                         </ul>
                 </Typography>
             {/* Sponsors Cards */}   

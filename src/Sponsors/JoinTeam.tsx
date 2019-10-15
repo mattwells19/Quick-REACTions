@@ -10,7 +10,7 @@ export default function Interest(props: any) {
             <div className="container">
                 <img src={joinTeam} className="sponsorLogo borderColorBlack" alt="Join Team"/>
                     <div className = "overlay backgroundBlack">
-                        <div className = "middleText cGold">You Could Be Here<br/>Join The Team</div>
+                        <div className = "middleText cGold">You Could Be Here</div>
                     </div>
             </div>
         </Typography>

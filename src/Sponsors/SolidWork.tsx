@@ -12,9 +12,9 @@ export default function Interest(props: any) {
             <EasyToSeeTooltip title="https://www.solidworks.com/">
             <Link href="https://www.solidworks.com/">
                 <div className="container">
-                    <img src={solidLogo} className="sponsorLogo borderColorGold" alt="SolisWorks Software"/>
-                    <div className = "overlay backgroundGold">
-                            <div className = "middleText cBlack">Learn More</div>
+                    <img src={solidLogo} className="sponsorLogo borderColorBlack" alt="SolisWorks Software"/>
+                    <div className = "overlay backgroundBlack">
+                            <div className = "middleText cGold">Learn More</div>
                         </div>
                 </div>
             </Link>

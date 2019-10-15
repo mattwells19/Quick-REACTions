@@ -12,9 +12,9 @@ export default function Interest(props: any) {
             <EasyToSeeTooltip title="https://www.walmart.com/">
             <Link style={{color: "#166837"}} href="https://www.walmart.com/">
                 <div className="container">
-                    <img src={walmartLogo} className="sponsorLogo borderColorGold" alt="Walmart"/>
-                        <div className = "overlay backgroundGold">
-                            <div className = "middleText cBlack">Learn More</div>
+                    <img src={walmartLogo} className="sponsorLogo borderColorBlack" alt="Walmart"/>
+                        <div className = "overlay backgroundBlack">
+                            <div className = "middleText cGold">Learn More</div>
                         </div>
                 </div>
             </Link>
