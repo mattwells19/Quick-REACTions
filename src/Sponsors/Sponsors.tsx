@@ -145,11 +145,11 @@ function Sponsors() {
             {/* Silver Sponsors Description */}
             <Typography align="center" className="desc cBlack" variant="h5" style={{marginLeft: 20, marginRight: 20}}>
             <p className="secTitle">Silver Level:<br/>($100+)</p><p className="leftAlign">Includes:</p>
-            <ul>
-                <li>Logo On All Of Our Robots</li>
-                <li>A shout out before any Robot Public Demonstrations</li>
-                <li>Same Benefits as the Green level Sponsorship</li>
-            </ul>
+            <Typography component="ul">
+                <Typography component="li">Logo On All Of Our Robots</Typography>
+                <Typography component="li">A shout out before any Robot Public Demonstrations</Typography>
+                <Typography component="li">Same Benefits as the Green level Sponsorship</Typography>
+            </Typography>
                 </Typography>
             {/* Sponsors Cards */}   
             <SponsorCard style={{ gridArea: "gSpon1"}}>
