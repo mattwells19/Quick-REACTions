@@ -12,8 +12,8 @@
     grid-template-areas:
     'banner banner banner banner'
     'TY TY TY TY'
-    'text handshake handshake .'
-    '. handshake handshake .'
+    'leftSideTxt handshake handshake rightSideTxt'
+    'leftSideTxt handshake handshake rightSideTxt'
     'tSection tSection tSection tSection'
     'tSection2 tSection2 tSection2 tSection2'
     'tSection3 tSection3 tSection3 tSection3'
@@ -99,16 +99,17 @@ img {
 }
 
 .secTitle {
-    font-weight: bold;
-    font-size: larger;
+    padding-top: 20px;
+    padding-bottom: 20px;
 }
 .leftAlign {
     text-align: left;
-    margin: 0;
+    padding-left: 20px;
 }
 
 ul {
     margin-top: 0;
+    padding-left: 45px;
 }
 
 li {
@@ -211,10 +212,14 @@ li {
 
 //Contact Info 
 .contactTxt {
-    grid-area: text;
+    grid-area: leftSideTxt;
     color: #212b31;
-    margin-top: 5rem;
-    margin-bottom: 5rem;
-    margin-left: 5rem;
-    margin-right: 5rem;
+    padding: 12px 10px 10px 15px;
+}
+
+//Other Info 
+.otherTxt {
+    grid-area: rightSideTxt;
+    color: #212b31;
+    padding: 12px 10px 10px 15px;
 }

@@ -70,8 +70,8 @@ const useStyles = makeStyles((theme: Theme) =>
             width: '100%',
             margin: "auto",
         },
-        sideCard: {
-            gridArea: "text",
+        leftSideCard: {
+            gridArea: "leftSideTxt",
             display: "flex",
             color: "#212b31",
             backgroundColor: "#B3A369",
@@ -80,8 +80,22 @@ const useStyles = makeStyles((theme: Theme) =>
             margin: "auto",
             marginLeft: "0",
             marginRight: "0rem",
-            width: "19rem",
+            height: "9rem",
+            width: "21rem",
          },
+        rightSideCard: {
+            gridArea: "rightSideTxt",
+            display: "flex",
+            color: "#212b31",
+            backgroundColor: "#B3A369",
+            boxShadow: "inset 0px 0px 23px 10px",
+            padding: "10px",
+            margin: "auto",
+            marginLeft: "0",
+            marginRight: "0rem",
+            height: "9rem",
+            width: "21rem",
+        },
         divider: {
             margin: "10px",
         },
@@ -118,14 +132,15 @@ function Sponsors() {
             <Paper className={classes.sectionCard} elevation={24}>
             <div className="typeSection-Grid">
             {/* GOLD Sponsors Description */}
-            <Typography align="center" className="desc cBlack" variant="h5" style={{marginLeft: 20, marginRight: 20}}>
-                <p className="secTitle">Gold Level:<br/>($250+)</p><p className="leftAlign">Includes:</p>
-                <ul>
-                    <li>Your Companys Logo On Clubs Shirts</li>
-                    <li>Logo On Club Merchendise</li>
-                    <li>Same Benefits As The Silver &amp; Green level Sponsorship</li>
-                </ul>
-                </Typography>
+            <Typography align="center" className="desc cBlack" style={{marginLeft: 20, marginRight: 20}}>
+            <Typography component="p" className="secTitle" variant="h4">Gold Level:<br/>($250+)</Typography>
+                <Typography component="p" variant="h5" className="leftAlign">Includes:</Typography>
+                    <Typography component="ul">
+                        <Typography component="li">Your Companys Logo On Clubs Shirts</Typography>
+                        <Typography component="li">Logo On Club Merchendise</Typography>
+                        <Typography component="li">Same Benefits As The Silver &amp; Green Level Sponsorship</Typography>
+                    </Typography>
+            </Typography>
             {/* GOLD Sponsors Cards */}   
             <SponsorCard style={{ gridArea: "gSpon1"}}>
                 <Walmart classes={classes} />
@@ -143,14 +158,15 @@ function Sponsors() {
             <Paper className={classes.section2Card} elevation={24}>
             <div className="typeSection-Grid">
             {/* Silver Sponsors Description */}
-            <Typography align="center" className="desc cBlack" variant="h5" style={{marginLeft: 20, marginRight: 20}}>
-            <p className="secTitle">Silver Level:<br/>($100+)</p><p className="leftAlign">Includes:</p>
-            <Typography component="ul">
-                <Typography component="li">Logo On All Of Our Robots</Typography>
-                <Typography component="li">A shout out before any Robot Public Demonstrations</Typography>
-                <Typography component="li">Same Benefits as the Green level Sponsorship</Typography>
+            <Typography align="center" className="desc cBlack" style={{marginLeft: 20, marginRight: 20}}>
+            <Typography component="p" className="secTitle" variant="h4">Silver Level:<br/>($100+)</Typography>
+                <Typography component="p" variant="h5" className="leftAlign">Includes:</Typography>
+                    <Typography component="ul">
+                        <Typography component="li">Logo On All Of Our Robots</Typography>
+                        <Typography component="li">A Shout Out Before Any Robot Public Demonstrations</Typography>
+                        <Typography component="li">Same Benefits As The Green Level Sponsorship</Typography>
+                    </Typography>
             </Typography>
-                </Typography>
             {/* Sponsors Cards */}   
             <SponsorCard style={{ gridArea: "gSpon1"}}>
                 <Ctc classes={classes} />
@@ -166,24 +182,34 @@ function Sponsors() {
             <div className="typeSection-Grid">
             {/* Green Sponsors Description */}
             <Typography align="center" className="desc cBlack" variant="h5" style={{marginLeft: 20, marginRight: 20}}>
-                        <p className="secTitle">Green Level:<br/>(-$100)</p><p className="leftAlign">Includes:</p>
-                        <ul>
-                            <li>Logo &amp; Link To Your Company's Website Will Be Displayed On CAR'S Sponsors Page</li>
-                        </ul>
-                </Typography>
+            <Typography component="p" className="secTitle" variant="h4">Green Level:<br/>($-100)</Typography>
+                <Typography component="p" variant="h5" className="leftAlign">Includes:</Typography>
+                    <Typography component="ul">
+                        <Typography component="li">Logo &amp; Link To Your Company's Website Will Be Displayed On CAR'S Sponsors Page</Typography>
+                    </Typography>
+            </Typography>
             {/* Sponsors Cards */}   
             <SponsorCard style={{ gridArea: "gSpon1"}}>
                 <Advanced classes={classes} />
             </SponsorCard>
+            <SponsorCard style={{ gridArea: "gSpon2"}}>
+                <JoinTeam classes={classes} />
+            </SponsorCard>
             </div>
             </Paper>    
                 
-            <Paper className={classes.sideCard} elevation={24}>
+            <Paper className={classes.leftSideCard} elevation={24}>
                 <Typography align="left" className="contactTxt" variant="h5">
                     Interested In Sponsoring?<br/>
                     <Link color="inherit" style={{ textDecoration: "none" }} href="mailto:car-robotics@uncc.edu"> 
                     Please Contact<br/>Sam Luu  {<Email className="icon" fontSize="large" />}
                     </Link> 
+                </Typography>
+            </Paper>
+
+            <Paper className={classes.rightSideCard} elevation={24}>
+                <Typography align="left" className="otherTxt" variant="h5">
+                    Placeholder for optional text to be displayed on the right side of the screen
                 </Typography>
             </Paper>
 
