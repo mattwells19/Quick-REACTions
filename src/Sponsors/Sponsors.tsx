@@ -2,7 +2,7 @@ import React from "react";
 import { Typography, Card, Paper, makeStyles, withStyles, createStyles, Theme, Divider, Link } from "@material-ui/core";
 import { Email } from "@material-ui/icons";
 import support from "../Images/roboSuport.png";
-import bannerImg from "../Images/banner.jpg";
+import bannerImg from "../Images/bannerCHA.jpg";
 import {DocumentTitle} from "../Main/DocumentTitle";
 import "./Sponsors.scss";
 import Walmart from "./Walmart";
@@ -43,10 +43,11 @@ const useStyles = makeStyles((theme: Theme) =>
             color: "#212b31",
             backgroundColor: "#B3A369",
             boxShadow: "inset 0px 0px 50px 30px",
+            opacity: .97,
             gridArea: "tSection",
             padding: "10px",
-            width: '100%',
-            height: '27rem',
+            width: '85rem',
+            height: '23rem',
             margin: "auto",
         },
         section2Card: {
@@ -54,10 +55,11 @@ const useStyles = makeStyles((theme: Theme) =>
             color: "#212b31",
             backgroundColor: "#A9A9A9",
             boxShadow: "inset 0px 0px 50px 30px",
+            opacity: .96,
             gridArea: "tSection2",
             padding: "10px",
-            width: '100%',
-            height: '27rem',
+            width: '85rem',
+            height: '23rem',
             margin: "auto",
         },
         section3Card: {
@@ -65,9 +67,11 @@ const useStyles = makeStyles((theme: Theme) =>
             color: "#212b31",
             backgroundColor: "#2d855f",
             boxShadow: "inset 0px 0px 50px 30px",
+            opacity: .95,
             gridArea: "tSection3",
             padding: "10px",
-            width: '100%',
+            width: '85rem',
+            height: '23rem',
             margin: "auto",
         },
         leftSideCard: {
@@ -77,11 +81,9 @@ const useStyles = makeStyles((theme: Theme) =>
             backgroundColor: "#B3A369",
             boxShadow: "inset 0px 0px 23px 10px",
             padding: "10px",
-            margin: "auto",
-            marginLeft: "0",
-            marginRight: "0rem",
-            height: "9rem",
-            width: "21rem",
+            margin: "auto auto auto 10px",
+            height: "10rem",
+            width: "auto",
          },
         rightSideCard: {
             gridArea: "rightSideTxt",
@@ -90,11 +92,9 @@ const useStyles = makeStyles((theme: Theme) =>
             backgroundColor: "#B3A369",
             boxShadow: "inset 0px 0px 23px 10px",
             padding: "10px",
-            margin: "auto",
-            marginLeft: "0",
-            marginRight: "0rem",
-            height: "9rem",
-            width: "21rem",
+            margin: "auto 10px auto auto",
+            height: "10rem",
+            width: "auto",
         },
         divider: {
             margin: "10px",

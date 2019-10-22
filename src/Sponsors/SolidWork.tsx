@@ -10,7 +10,7 @@ export default function Interest(props: any) {
     return (
         <Typography>
             <EasyToSeeTooltip title="https://www.solidworks.com/">
-            <Link href="https://www.solidworks.com/">
+            <Link href="https://www.solidworks.com/" target="_blank">
                 <div className="container">
                     <img src={solidLogo} className="sponsorLogo borderColorBlack" alt="SolisWorks Software"/>
                     <div className = "overlay backgroundBlack">

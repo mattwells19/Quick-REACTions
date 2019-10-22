@@ -10,7 +10,7 @@ export default function Interest(props: any) {
     return (
         <Typography>
             <EasyToSeeTooltip title="https://www.4pcb.com/">
-            <Link style={{color: "#166837"}} href="https://www.4pcb.com/">
+            <Link style={{color: "#166837"}} href="https://www.4pcb.com/" target="_blank">
                 <div className="container">
                     <img src={advLogo} className="sponsorLogo borderColorBlack" alt="Advanced Circuits"/>
                     <div className = "overlay backgroundBlack">

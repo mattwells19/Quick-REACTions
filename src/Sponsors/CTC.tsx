@@ -10,7 +10,7 @@ export default function Interest(props: any) {
     return (
         <Typography>
             <EasyToSeeTooltip title="https://www.ctcharlotte.org/Online/default.asp">
-            <Link style={{color: "#166837"}} href="https://www.ctcharlotte.org/Online/default.asp">
+            <Link style={{color: "#166837"}} href="https://www.ctcharlotte.org/Online/default.asp" target="_blank">
                 <div className="container">
                     <img src={ctcLogo} className="sponsorLogo borderColorBlack" alt="Advanced Circuits"/>
                     <div className = "overlay backgroundBlack">
