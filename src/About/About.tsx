@@ -6,6 +6,10 @@ import Outreach from "../Images/Officers/Outreach.jpg";
 import Treasurer from "../Images/Officers/Treasurer.jpg";
 import VP from "../Images/Officers/VP.jpg";
 import President from "../Images/Officers/President.gif";
+import Matt from "../Images/DevTeam/Matt.jpg";
+import Ash from "../Images/DevTeam/Ash.jpg";
+import Pedro from "../Images/DevTeam/Pedro.jpg";
+import Teng from "../Images/DevTeam/Teng.jpg";
 import "./About.scss";
 import "../Themes.scss";
 import Slideshow from "./Slideshow";
@@ -26,10 +30,10 @@ class About extends Component {
                 </div>
                 <div>
                     <AboutBackground elevation={24} className="card-group">
-                        <Typography style={{color: "#B3A369", gridArea: "t"}} variant="h3" align="center">
+                        <Typography style={{ color: "#B3A369", gridArea: "t" }} variant="h3" align="center">
                             Officers
                         </Typography>
-                        <Divider style={{backgroundColor: "#B3A369", gridArea: "d"}} variant="middle" />
+                        <Divider style={{ backgroundColor: "#B3A369", gridArea: "d" }} variant="middle" />
                         <div className="card-container">
                             <OfficerCard
                                 image={President}
@@ -64,40 +68,34 @@ class About extends Component {
                         </div>
                     </AboutBackground>
                     <AboutBackground elevation={24} className="card-group">
-                        <Typography style={{color: "#B3A369", gridArea: "t"}} variant="h3" align="center">
+                        <Typography style={{ color: "#B3A369", gridArea: "t" }} variant="h3" align="center">
                             Web Team
                         </Typography>
-                        <Divider style={{backgroundColor: "#B3A369", gridArea: "d"}} variant="middle" />
+                        <Divider style={{ backgroundColor: "#B3A369", gridArea: "d" }} variant="middle" />
                         <div className="card-container">
                             <OfficerCard
-                                image={President}
+                                image={Matt}
                                 name="Matt Wells"
                                 officer={Officer.Developer}
                                 linkedIn="https://www.linkedin.com/in/nathaniel-belles-04a2894b/"
                             />
                             <OfficerCard
-                                image={President}
+                                image={Ash}
                                 name="Ashley Harmon"
                                 officer={Officer.Developer}
                                 linkedIn="https://www.linkedin.com/in/mwells21/"
                             />
                             <OfficerCard
-                                image={President}
+                                image={Pedro}
                                 name="Pedro Millan Perez"
                                 officer={Officer.Developer}
-                                linkedIn="https://www.linkedin.com/in/nathan-langley"
+                                linkedIn="https://www.linkedin.com/in/pmillan06/"
                             />
                             <OfficerCard
-                                image={President}
+                                image={Teng}
                                 name="Teng Lee"
                                 officer={Officer.Developer}
-                                linkedIn="https://www.linkedin.com/in/sluu3/"
-                            />
-                            <OfficerCard
-                                image={President}
-                                name="Aaron Yow"
-                                officer={Officer.Developer}
-                                linkedIn="https://www.linkedin.com/in/noel-mills-01362815a/"
+                                linkedIn="https://www.linkedin.com/in/teng-lee-5323a0162/"
                             />
                         </div>
                     </AboutBackground>

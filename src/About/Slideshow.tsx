@@ -29,7 +29,7 @@ export default function Slideshow(props: any) {
     return (
         <>
             <AboutBackground className="slideshow-container">
-                
+
                 <Typography align="center" variant="h3" style={{ gridArea: "title", color: "#B3A369" }}  >
                     Who We Are - What We Do
                 </Typography>
@@ -40,7 +40,7 @@ export default function Slideshow(props: any) {
                     <KeyboardArrowLeft style={{ color: "white" }} />
                 </IconButton>
 
-                <SlideShowContent contentIndex={slideIndex}/>
+                <SlideShowContent contentIndex={slideIndex} />
 
                 <IconButton style={{ margin: "auto" }} className="slideshow-rightArrow" onClick={handleRightArrowClick}>
                     <KeyboardArrowRight style={{ color: "white" }} />
