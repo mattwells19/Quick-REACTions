@@ -30,8 +30,11 @@ export default function Slideshow(props: any) {
         <>
             <AboutBackground className="slideshow-container">
 
-                <Typography align="center" variant="h3" style={{ gridArea: "title", color: "#B3A369" }}  >
-                    Who We Are - What We Do
+                <Typography align="center" variant="h2" style={{ gridArea: "title", color: "#B3A369" }}  >
+                    Who We Are
+                </Typography>
+                <Typography align="center" variant="h4" style={{ gridArea: "words", color: "#B3A369" }}  >
+                    - Mechanical Engineering | Electrical Engineering | Computer Engineering | Computer Science -
                 </Typography>
 
                 <Divider style={{ gridArea: "divider", backgroundColor: "#B3A369" }} />

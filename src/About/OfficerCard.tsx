@@ -1,7 +1,5 @@
 import React from "react";
-import clsx from "clsx";
-import { Card, CardActionArea, CardMedia, CardContent, Typography, makeStyles, Theme, createStyles, Divider, Collapse, IconButton, CardActions } from "@material-ui/core";
-import { ExpandMore, ExpandLess } from "@material-ui/icons";
+import { Card, CardActionArea, CardMedia, CardContent, Typography, makeStyles, Theme, createStyles, Divider } from "@material-ui/core";
 import EasyToSeeTooltip from "../Main/EasyToSeeTooltip";
 
 export enum Officer {
@@ -47,12 +45,6 @@ const useStyles = makeStyles((theme: Theme) =>
 
 export default function OfficerCard(props: OfficerCardProps) {
 
-    const [expanded, setExpanded] = React.useState<boolean>(false);
-
-    const handleExpandClick = () => {
-        setExpanded(!expanded);
-    };
-
     const classes = useStyles();
     return (
         <EasyToSeeTooltip title={props.linkedIn}>
@@ -72,24 +64,7 @@ export default function OfficerCard(props: OfficerCardProps) {
                         </Typography>
                     </CardContent>
                 </CardActionArea>
-                <CardActions>
-                    <IconButton
-                        className={clsx(classes.expand, {
-                            [classes.expandOpen]: expanded,
-                        })}
-                        onClick={handleExpandClick}
-                        aria-expanded={expanded}
-                        aria-label="show more"
-                    >
-                        <ExpandMore />
-                    </IconButton>
-                </CardActions>
-                <Collapse in={expanded} timeout="auto" unmountOnExit>
-                    <Typography variant="h4">
-                        Hello
-                    </Typography>
-                </Collapse>
             </Card>
-        </EasyToSeeTooltip>
+        </EasyToSeeTooltip >
     );
 }

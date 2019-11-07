@@ -26,20 +26,20 @@ const useStyles = makeStyles((theme: Theme) =>
 
 const SlideShowContentItems = [
     {
-        text: "Charlotte Area Robotics is a UNCC Student Organization that competes anually in the IEEE SoutheastCon Hardware Competition",
+        text: "Charlotte Area Robotics is an UNCC Student Organization that competes anually in the IEEE SoutheastCon Hardware Competition",
         img: Logo,
         size: { width: "504px", height: "504px" }
     },
     {
-        text: "We educate other students...",
+        text: "We educate other students",
         img: ArduinoWksp
     },
     {
-        text: "We educate each other...",
+        text: "We educate each other",
         img: SprintReview23
     },
     {
-        text: "We design, build, and test a rboot to compete...",
+        text: "We design, build, and test a robot to compete",
         img: Robot
     }
 ];
