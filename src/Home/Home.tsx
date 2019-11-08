@@ -1,15 +1,16 @@
 import React from "react";
-import { Typography, Card, Paper, makeStyles, withStyles, createStyles, Theme } from "@material-ui/core";
+import { Typography, Card, Paper, makeStyles, withStyles, createStyles, Theme, Divider, Grid } from "@material-ui/core";
 import { useCurrentWidth } from "react-socks";
 import {DocumentTitle} from "../Main/DocumentTitle";
 import logo from "../Images/CARLogoPrimary.png";
 import "./Home.scss";
 import Social from "./Social";
 import Interest from "./Interest";
+import PayPal from "./PayPal";
 
 const SideCard = withStyles({
     root: {
-        display: "flex",
+        display: "inline-flex",
         padding: "10px",
         fontFamily: "Inconsolata",
         backgroundColor: "#B3A369",
@@ -17,8 +18,15 @@ const SideCard = withStyles({
         margin: "auto",
         textAlign: "center",
         borderRadius: "1rem",
+        maxWidth: "20rem",
     },
 })(Card);
+
+const CardDivider = withStyles({
+    root: {
+        margin: "1rem",
+    },
+})(Divider);
 
 const useStyles = makeStyles((theme: Theme) =>
     createStyles({
@@ -32,7 +40,7 @@ const useStyles = makeStyles((theme: Theme) =>
             verticalAlign: "middle",
         },
         divider: {
-            margin: "10px",
+            margin: "2rem",
         },
     }),
 );
@@ -61,9 +69,23 @@ function Home() {
                 </Paper>
             </div>
             <div className="computer">
-                <Typography>
-                    Cool stuff
-                </Typography>
+                <Grid container justify="space-evenly" alignItems="center" style={{height: "100%"}}>
+                    <Grid item>
+                        <SideCard>
+                            <Social CardDivider={CardDivider}/>
+                        </SideCard>
+                    </Grid>
+                    <Grid item>
+                        <SideCard>
+                            <Interest CardDivider={CardDivider}/>
+                        </SideCard>
+                    </Grid>
+                    <Grid item>
+                        <SideCard>   
+                            <PayPal CardDivider={CardDivider}/>
+                        </SideCard>
+                    </Grid>
+                </Grid>
             </div>
         </>
     );
