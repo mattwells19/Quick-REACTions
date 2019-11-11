@@ -71,17 +71,17 @@ function Home() {
             <div className="computer">
                 <Grid container justify="space-evenly" alignItems="center" style={{height: "100%"}}>
                     <Grid item>
-                        <SideCard>
+                        <SideCard elevation={24}>
                             <Social CardDivider={CardDivider}/>
                         </SideCard>
                     </Grid>
                     <Grid item>
-                        <SideCard>
+                        <SideCard elevation={24}>
                             <Interest CardDivider={CardDivider}/>
                         </SideCard>
                     </Grid>
                     <Grid item>
-                        <SideCard>   
+                        <SideCard elevation={24}>   
                             <PayPal CardDivider={CardDivider}/>
                         </SideCard>
                     </Grid>
