@@ -1,57 +1,82 @@
-//Setup Webpage grid
-.grid-box {
+//Main Grid CSS 
+.sponsors-container {
     background-image: url("../Images/Circuits.png");
     background-repeat: repeat;
     background-position: center center;
     background-size: contain;
-    display: grid;
-    grid-template-columns: (4, 1fr);
+    grid-template-columns: repeat(5, 1fr);
     grid-auto-rows: minmax(100px, auto);
-    margin: 0 auto;
+    display: grid;
     max-width: 85rem;
     grid-gap: 10px;
     grid-template-areas:
-    'banner banner banner banner'
-    'TY TY TY TY'
-    'leftSideTxt handshake handshake rightSideTxt'
-    'leftSideTxt handshake handshake rightSideTxt'
-    'tSection tSection tSection tSection'
-    'tSection2 tSection2 tSection2 tSection2'
-    'tSection3 tSection3 tSection3 tSection3'
-    '. . . .';
+        'banner banner banner banner banner'
+        'tyTxt tyTxt tyTxt tyTxt tyTxt'
+        'leftCard handshake handshake handshake rightCard'
+        'sec1 sec1 gSpon1 gSpon2 gSpon3'
+        'sec2 sec2 sSpon1 sSpon2 sSpon3'
+        'sec3 sec3 grSpon1 grSpon2 grSpon3'
+        '. . . . .';
+}
+
+//Main Grid Setup (Mobile Version)
+.sponsors-container-mobile {
+    background-image: url("../Images/Circuits.png");
+    background-repeat: repeat;
+    background-position: center center;
+    grid-template-columns: repeat(3, 1fr);
+    grid-auto-rows: minmax(100px, auto);
+    row-gap: 2rem; 
+    display: grid;
+    grid-template-areas:
+        'banner banner banner'
+        'tyTxt tyTxt tyTxt'
+        'handshake handshake handshake'
+        '. sec1 .'
+        '. gSpon1 .'
+        '. gSpon2 .'
+        '. gSpon3 .'
+        '. sec2 .'
+        '. sSpon1 .'
+        '. sSpon2 .'
+        '. sSpon3 .'
+        '. sec3 .'
+        '. grSpon1 .'
+        '. grSpon2 .'
+        '. grSpon3 .'
+        '. leftCard .'
+        '. rightCard .'
+        '. . .';
 }
 
 //Banner image
 .banner {
     grid-area: banner;
     display: block;
-    width: 100%;
-    min-height: 350px;
-    max-height: 600px;
-    margin: auto;
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+    width: 95%;
+    height: 30rem;
+    opacity: .95;
+    margin: 80px auto auto auto;
+    border-radius: 20rem;
+    background-color: #B3A369;
 }
 
-img {
-    vertical-align: middle;
-    border-style: none;
-}
-
+//ThankYou SideCard Styling
 .ty-text {
-    grid-area: TY;
-    color: #B3A369;
+    grid-area: tyTxt;
     background-color: #212b31;
-    padding-top: 1rem;
-    padding-bottom: 1rem;
-    border-radius: 10px;
-    margin: auto;
-    text-align: center;
+    color: #B3A369;
+    padding-top: 6px;
 }
 
+//Handshake Imag styling
 .handshakeImg {
     background-color: #B3A369;
     grid-area: handshake;
     display: block;
-    width: 45rem;
+    width: 100%;
     height: 20rem;
     border-radius: 180px;
     margin-bottom: 1rem;
@@ -61,35 +86,14 @@ img {
     box-shadow: inset 0px 0px 50px 30px;
 }
 
-.typeSectionClass {
-    grid-area: tSection;
-    color: #B3A369;
-    background-color: #212b31;
-    width: 100%;
+//leftCard Styling
+.leftCard {
+    margin: auto auto auto 20px;
 }
 
-//Sponsor Type Grid Setup
-.typeSection-Grid {
-    display: grid;
-    grid-template-columns: (4, 1fr);
-    grid-auto-rows: minmax(100px, auto);
-    width: 100%;
-    grid-gap: 10px;
-    grid-template-areas:
-    'desc gSpon1 gSpon2 gSpon3'
-    'desc gSpon1 gSpon2 gSpon3';
-}
-
-//Sponsor Type Grid Setup from Oposite Site (Optional)
-.typeSectionOps-Grid {
-    display: grid;
-    grid-template-columns: (4, 1fr);
-    grid-auto-rows: minmax(100px, auto);
-    width: 100%;
-    grid-gap: 10px;
-    grid-template-areas:
-    'gSpon3 gSpon2 gSpon1 desc'
-    'gSpon3 gSpon2 gSpon1 desc';
+//rightCard Styling
+.rightCard {
+    margin: auto 20px auto auto;
 }
 
 .desc {
@@ -211,16 +215,3 @@ li {
     background-color: #2d855f;
 }
 
-//Contact Info 
-.contactTxt {
-    grid-area: leftSideTxt;
-    color: #212b31;
-    padding: 12px 10px 10px 15px;
-}
-
-//Other Info 
-.otherTxt {
-    grid-area: rightSideTxt;
-    color: #212b31;
-    padding: 12px 10px 10px 15px;
-}
