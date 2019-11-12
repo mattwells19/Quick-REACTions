@@ -18,7 +18,8 @@ const SideCard = withStyles({
         margin: "auto",
         textAlign: "center",
         borderRadius: "1rem",
-        maxWidth: "20rem",
+        height: "12rem",
+        maxWidth: "max-content",
     },
 })(Card);
 
@@ -34,7 +35,6 @@ const useStyles = makeStyles((theme: Theme) =>
             maxWidth: "50rem",
             display: "flex",
             backgroundColor: "#212b31",
-            gridArea: "text",
             padding: "10px",
             margin: "auto",
             verticalAlign: "middle",
@@ -73,15 +73,9 @@ function Home() {
                     <Grid item>
                         <SideCard elevation={24}>
                             <Social CardDivider={CardDivider}/>
-                        </SideCard>
-                    </Grid>
-                    <Grid item>
-                        <SideCard elevation={24}>
+                            <Divider style={{margin: "auto 10px"}} orientation="vertical"/>
                             <Interest CardDivider={CardDivider}/>
-                        </SideCard>
-                    </Grid>
-                    <Grid item>
-                        <SideCard elevation={24}>   
+                            <Divider style={{margin: "auto 10px"}} orientation="vertical"/>
                             <PayPal CardDivider={CardDivider}/>
                         </SideCard>
                     </Grid>
