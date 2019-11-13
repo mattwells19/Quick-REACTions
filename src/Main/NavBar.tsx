@@ -29,7 +29,7 @@ const useStyles = makeStyles((theme: Theme) =>
             color: "white",
             position: "absolute",
             left: "2px",
-            top: "10px",
+            paddingTop: "2px",
         },
         mobileNavBar: {
             alignSelf: "center",
@@ -79,12 +79,12 @@ export default function NavBar() {
                         Charlotte Area Robotics
                     </Typography>
                 </AppBar>
-                <SwipeableDrawer 
-                    onOpen={() => setShowSidebar(true)} 
-                    onClose={() => setShowSidebar(false)} 
-                    open={showSidebar} 
-                    classes={{ paper: classes.paper }} 
-                    variant="persistent" 
+                <SwipeableDrawer
+                    onOpen={() => setShowSidebar(true)}
+                    onClose={() => setShowSidebar(false)}
+                    open={showSidebar}
+                    classes={{ paper: classes.paper }}
+                    variant="persistent"
                     anchor="left"
                 >
                     <NavBarContent
