@@ -14,12 +14,12 @@ export default function Social(props: any) {
             <CardDivider/>
             <EasyToSeeTooltip title="https://www.instagram.com/car_robotics/">
                 <IconButton href="https://www.instagram.com/car_robotics/" target="_blank">
-                    <Instagram fontSize="large" color="action" />
+                    <Instagram fontSize="large" htmlColor="#B3A369" />
                 </IconButton>
             </EasyToSeeTooltip>
             <EasyToSeeTooltip title="https://www.facebook.com/CharlotteAreaRobotics/">
                 <IconButton href="https://www.facebook.com/CharlotteAreaRobotics/" target="_blank">
-                    <Facebook fontSize="large" color="action" />
+                    <Facebook fontSize="large" htmlColor="#B3A369" />
                 </IconButton>
             </EasyToSeeTooltip>
         </div>

@@ -13,8 +13,8 @@ const SideCard = withStyles({
         display: "inline-flex",
         padding: "10px",
         fontFamily: "Inconsolata",
-        backgroundColor: "#B3A369",
-        color: "#212b31",
+        backgroundColor: "#212B31",
+        color: "#B3A369",
         margin: "auto",
         textAlign: "center",
         borderRadius: "1rem",
@@ -26,6 +26,7 @@ const SideCard = withStyles({
 const CardDivider = withStyles({
     root: {
         margin: "1rem",
+        backgroundColor: "#B3A369",
     },
 })(Divider);
 
@@ -48,7 +49,7 @@ const useStyles = makeStyles((theme: Theme) =>
 function Home() {
     const width = useCurrentWidth();
     const classes = useStyles();
-    const max_width = width > 1000 ? "15rem" : "";
+    // const max_width = width > 1000 ? "15rem" : "";
     const card_margin = width > 1000 ? "" : "10px";
 
     DocumentTitle({title: "Home"});
@@ -71,11 +72,11 @@ function Home() {
             <div className="computer">
                 <Grid container justify="space-evenly" alignItems="center" style={{height: "100%"}}>
                     <Grid item>
-                        <SideCard elevation={24}>
+                        <SideCard elevation={24} >
                             <Social CardDivider={CardDivider}/>
-                            <Divider style={{margin: "auto 10px"}} orientation="vertical"/>
+                            <Divider style={{margin: "auto 10px", backgroundColor: "#B3A369"}} orientation="vertical"/>
                             <Interest CardDivider={CardDivider}/>
-                            <Divider style={{margin: "auto 10px"}} orientation="vertical"/>
+                            <Divider style={{margin: "auto 10px", backgroundColor: "#B3A369"}} orientation="vertical"/>
                             <PayPal CardDivider={CardDivider}/>
                         </SideCard>
                     </Grid>

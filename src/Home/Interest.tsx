@@ -11,7 +11,7 @@ export default function Interest(props: any) {
                 Interested in joining CAR?
                 <CardDivider/>
                 <EasyToSeeTooltip title="https://ninerengage.uncc.edu/organization/car-robotics">
-                    <Link style={{color: "#046A38"}} target="_blank" href="https://ninerengage.uncc.edu/organization/car-robotics">
+                    <Link style={{color: "#1E9635"}} target="_blank" href="https://ninerengage.uncc.edu/organization/car-robotics">
                         Visit our Niner Engage page!
                     </Link>
                 </EasyToSeeTooltip>

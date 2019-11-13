@@ -3,8 +3,8 @@
 .logo {
     grid-area: logo;
     display: block;
-    max-width: 40rem;
-    max-height: 40rem;
+    max-width: 35rem;
+    max-height: 35rem;
     height: inherit;
     margin: auto;
 }
@@ -24,7 +24,7 @@
     background-image: url("../Images/Electrical.jpg");
     background-repeat: no-repeat;
     background-position: center center;
-    padding-top: 6rem;
+    padding-top: 4rem; 
     padding-bottom: 1rem;
     background-size: cover;
 }
