@@ -1,10 +1,11 @@
 import React, { Component } from "react";
 import './Archive.scss';
 import Iframe from 'react-iframe';
-
-
+import AdvancedGridList from './ImageGrid';
 
 class Archive extends Component {
+
+    
     render() {
         return (
             <div className="testing">
@@ -20,7 +21,8 @@ class Archive extends Component {
                         position="relative"
                         allowFullScreen
                     />    
-                    }              
+                    }   
+                    <AdvancedGridList/>   
                     <h3>Check out more videos on our <a href="https://www.youtube.com/results?search_query=Charlotte+Area+Robotics+" target="_blank">YouTube channel</a></h3>    
             </div>
             
