@@ -5,7 +5,7 @@ import GridList from '@material-ui/core/GridList';
 import GridListTile from '@material-ui/core/GridListTile';
 import GridListTileBar from '@material-ui/core/GridListTileBar';
 import IconButton from '@material-ui/core/IconButton';
-import StarBorderIcon from '@material-ui/icons/StarBorder';
+//import StarBorderIcon from '@material-ui/icons/StarBorder';
 import './Archive.scss';
 
 const useStyles = makeStyles((theme: Theme) =>
@@ -156,7 +156,7 @@ export default function AdvancedGridList() {
                 titlePosition="top"
                 actionIcon={
                   <IconButton aria-label={`star ${tile.title}`} className={classes.icon}>
-                    <StarBorderIcon />
+                 
                   </IconButton>
                 }
                 actionPosition="left"
