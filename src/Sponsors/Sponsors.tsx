@@ -102,7 +102,7 @@ function Sponsors() {
             {/* rightSide Card */}
             <SponsorCard className = "rightCard" style={{ gridArea: "rightCard", backgroundColor: "#B3A369", maxWidth: max_width, marginLeft: card_margin, marginRight: card_margin}}>
                 <Typography align="left" variant="h5">
-                    Placeholder for optional text to be displayed on the right side of the screen
+                    Placeholder for optional text to be displayed on the right of the screen
                 </Typography>
             </SponsorCard>
 
@@ -110,7 +110,7 @@ function Sponsors() {
             {/* GOLD Sponsors Section */}
             <Paper className={classes.sectionCard} style={{ gridArea: "sec1", backgroundColor: "#B3A369", maxWidth: max_width, marginLeft: card_margin, marginRight: card_margin}}>
                 {/* GOLD Sponsors Description */}
-                <Typography align="center" className="desc cBlack">
+                <Typography align="center" className="desc cBlack" style={{marginLeft: 20, marginRight: 20}}>
                     <Typography component="p" className="secTitle" variant="h4">Gold Level:<br/>($250+)</Typography>
                         <Typography component="p" variant="h5" className="leftAlign">Includes:</Typography>
                         <Typography component="ul">
@@ -171,7 +171,7 @@ function Sponsors() {
             </SponsorCard>
             <SponsorCard className = "gSpon" style={{ gridArea: "grSpon2", maxWidth: max_width, marginLeft: card_margin, marginRight: card_margin}}>
                 <JoinTeam classes={classes} />
-            </SponsorCard>   
+            </SponsorCard>
 
         </div>
     );
