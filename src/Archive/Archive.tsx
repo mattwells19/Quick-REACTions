@@ -23,7 +23,7 @@ class Archive extends Component {
                     />    
                     }   
                 </div>
-                    <h3 id ="checkoutMore">Watch more videos on our <a href="https://www.youtube.com/results?search_query=Charlotte+Area+Robotics+" target="_blank">YouTube </a>channel</h3>
+                    <h3 id ="checkoutMore">Watch more videos on <a href="https://www.youtube.com/results?search_query=Charlotte+Area+Robotics+" target="_blank">YouTube </a></h3>
                 </div> 
                 <div id="photoSection">
                 <h3 id="photoGal"> - Photo Gallery - </h3>
