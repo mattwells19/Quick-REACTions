@@ -15,11 +15,11 @@ const useStyles = makeStyles((theme: Theme) =>
       flexWrap: 'wrap',
       justifyContent: 'space-around',
       overflow: 'hidden',
-      backgroundColor: theme.palette.background.paper,
+      backgroundColor: '#212B31',
     },
     gridList: {
-      width: 725,
-      height: 520,
+      width: 850,
+      height: 600,
       transform: 'translateZ(0)',
     },
     titleBar: {
@@ -28,12 +28,27 @@ const useStyles = makeStyles((theme: Theme) =>
         'rgba(0,0,0,0.3) 70%, rgba(0,0,0,0) 100%)',
     },
     icon: {
-      color: 'white',
+      color: '#bfbfbf',
     },
   }),
 );
 
 const tileData = [
+  {
+    img: '/ReturningMembers.jpg',
+    title: 'Returning Members',
+    featured: true,
+  },
+  {
+    img: '/Robot1.jpg',
+    title: 'Robot',
+    featured: false,
+  },
+  {
+    img: '/Robot2.jpg',
+    title: 'Robot',
+    featured: false,
+  },
   {
     img: '/Outreach/ArduinoWksp-6.jpg',
     title: 'Arduino WorkSpace',
@@ -94,14 +109,43 @@ const tileData = [
   title: 'NCScience',
   featured: true,
 },
+{
+  img: '/SprintReviews/EndofSprint2-1.jpg',
+  title: 'Sprint Reviews1',
+  featured: true,
+},
+{
+  img: '/SprintReviews/EndofSprint2-2.jpg',
+  title: 'Sprint Reviews2',
+  featured: false,
+},
+{
+  img: '/SprintReviews/EndofSprint2-3.jpg',
+  title: 'Sprint Reviews3',
+  featured: false,
+},
+{
+  img: '/SprintReviews/EndofSprint2-4.jpg',
+  title: 'Sprint Reviews4',
+  featured: true,
+},
+{
+  img: '/SprintReviews/EndofSprint2-5.jpg',
+  title: 'Sprint Reviews5',
+  featured: false,
+},
+{
+  img: '/SprintReviews/EndofSprint2-7.jpg',
+  title: 'Sprint Reviews7',
+  featured: false,
+},
 
-    ];
+];
 
 export default function AdvancedGridList() {
     const classes = useStyles();
   
     return (
-      <div className="sizeOfAlbum">
         <div className={classes.root}>
         <GridList cellHeight={200} spacing={1} className={classes.gridList}>
           {tileData.map(tile => (
@@ -122,6 +166,5 @@ export default function AdvancedGridList() {
           ))}
         </GridList>
         </div>
-      </div>
     );
   }
