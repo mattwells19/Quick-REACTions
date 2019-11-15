@@ -11,8 +11,16 @@
     grid-gap: 10px;
     grid-template-areas:
         'banner banner banner'
-        'leftCard . rightCard'
-        'bottomTxt bottomTxt bottomTxt';
+        'bottomTxt bottomTxt bottomTxt'
+        '.arduino1.'
+        '.bobsBash.'
+        '.discoveryplace1.'
+        '.discoveryplace2.' 
+        '. . .';
+        
+        
+        
+        
 }
 
 //Main Grid Setup (Mobile Version)
@@ -27,8 +35,8 @@
     grid-template-areas:
         'banner banner banner'
         'bottomTxt bottomTxt bottomTxt'
-        '. leftCard .'
-        '. rightCard .'
+        '.arduino1.'
+        '.bobsBash.'
         '. . .';
 }
 
@@ -38,7 +46,7 @@
     display: block;
     padding-top: 2rem;
     padding-bottom: 2rem;
-    width: 95%;
+    width: 80%;
     height: 30rem;
     opacity: .95;
     margin: 80px auto auto auto;
@@ -59,4 +67,62 @@
 .more-text {
     grid-area: text;
     color: #B3A369;
+}
+
+// Arduino1 image styling
+.arduino1 {
+    grid-area: arduino1;
+    display: block;
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+    width: 100%;
+    height: 30rem;
+    opacity: .95;
+    margin: auto auto auto auto;
+    border-radius: 20rem;
+    background-color: rgb(37, 107, 43);
+}
+
+
+// Bobs bash Image Styling
+.bobsBash {
+    grid-area: bobsBash;
+    display: block;
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+    width: 100%;
+    height: 30rem;
+    opacity: .95;
+    margin: auto auto auto auto;
+    border-radius: 20rem;
+    background-color: rgb(37, 107, 43);
+
+}
+
+// Discovery Place 1 Image styling
+.discoveryplace1{
+    grid-area: discoveryplace1;
+    display: block;
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+    width: 100%;
+    height: 30rem;
+    opacity: .95;
+    margin: auto auto auto auto;
+    border-radius: 20rem;
+    background-color: rgb(37, 107, 43);
+}
+
+// Discovery Place 2 Image styling
+.discoveryplace2{
+    grid-area: discoveryplace2;
+    display: block;
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+    width: 100%;
+    height: 30rem;
+    opacity: .95;
+    margin: auto auto auto auto;
+    border-radius: 20rem;
+    background-color: rgb(37, 107, 43);
 }

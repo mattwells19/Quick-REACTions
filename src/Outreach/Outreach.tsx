@@ -1,8 +1,15 @@
 import React from "react";
-import { Typography, Card, Paper, makeStyles, withStyles, createStyles, Theme } from "@material-ui/core";
+import { Typography, Card, CardActionArea,CardContent, CardMedia, Paper, makeStyles, withStyles, createStyles, Theme } from "@material-ui/core";
 import { useCurrentWidth } from "react-socks";
 import {DocumentTitle} from "../Main/DocumentTitle";
 import banner from "../Images/outreachBan1.jpg";
+import arduino1 from "../Images/Outreach/ArduinoWksp-1.jpg";
+import bobsBash from "../Images/Outreach/BobsBash1-2.jpg";
+import discoveryplace1 from "../Images/Outreach/DiscoveryPlace1.jpg";
+import discoveryplace2 from "../Images/Outreach/DiscoveryPlace2.jpg";
+import elementary1 from "../Images/Outreach/Elemtary1.jpg";
+import elementary2 from "../Images/Outreach/Elemtary2.jpg";
+import ncscience1 from "../Images/Outreach/NCScience1.jpg";
 import "./Outreach.scss";
 
 //Used to define a variable of type card and style it
@@ -56,23 +63,33 @@ function Outreach() {
             <img src={banner} className="banner" alt="Banner" />
 
             {/* Top Section */}
-            <SideCard className = "leftCard" style={{ gridArea: "leftCard", maxWidth: max_width, marginLeft: card_margin, marginRight: card_margin}}>
-                <Typography>This is a Side Card</Typography>
-            </SideCard>
+           
 
-
-            <SideCard className = "rightCard" style={{ gridArea: "rightCard", maxWidth: max_width, marginLeft: card_margin, marginRight: card_margin}}>
-                <Typography>This Is another Side Card</Typography>
-            </SideCard>
-
-            <Paper className={classes.bottomCard} elevation={24} style={{marginLeft: card_margin, marginRight: card_margin}}>
+            <Paper className={classes.bottomCard} elevation={25} style={{marginLeft: card_margin, marginRight: card_margin}}>
                 <Typography align="center" className="more-text" variant="h4">
-                    Our mission is to educate and to learn about all aspects of mobile robotics.
-                    From the novice to the experienced, we welcome all students who are excited
-                    to learn more about the field of robotics and apply the concepts they learn
-                    in the classroom to real world applications.
+                    We love helping and reaching out to our community. Volunteering is very important to us
+                    and we strive to make our community better every chance we get. 
                 </Typography>
             </Paper>
+
+
+            {/*Arduino 1 Image */}
+            <img src={arduino1} className = "arduino1" alt = "Arduino1" />
+                
+
+            {/*Bobs Bash Image*/}
+            <img src={bobsBash} className = "bobsBash" alt = "BobsBash" />
+
+
+            {/*Discovery Place 1 Image */}
+            <img src={discoveryplace1} className = "discoveryplace1" alt = "Discoveryplace1" />
+
+
+            
+            {/*Discovery Place 2 Image */}
+            <img src={discoveryplace2} className = "discoveryplace2" alt = "Discoveryplace2" />
+            
+
 
         </div> //Closed the website container Div
     );
