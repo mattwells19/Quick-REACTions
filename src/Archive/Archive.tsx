@@ -13,10 +13,10 @@ class Archive extends Component {
                     <h3 id="welcomeMsg">Check out our video compilation and photo gallery of previous competitions and club activities</h3>      
                 <div id="video">
                     { <Iframe 
-                        url="https://www.youtube.com/embed/uVpk5vx2Kag"
+                        url="https://www.youtube.com/embed/QIC3dg53WWg"
                         width="950px"
                         height="550px"
-                        id="vid1"
+                        id="CAR_CompilationVid"
                         className="archiveVideos"
                         
                         allowFullScreen
