@@ -7,7 +7,7 @@ body {
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  background-color: $background-green;
+  background-image: linear-gradient(to bottom right, $background-green, $school-gold);
 }
 
 code {
