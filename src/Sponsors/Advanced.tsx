@@ -6,18 +6,17 @@ import advLogo from "../Images/Adv.png";
 
 
 export default function Interest(props: any) {
-    const { classes } = props;
     return (
         <Typography>
             <EasyToSeeTooltip title="https://www.4pcb.com/">
-            <Link style={{color: "#166837"}} href="https://www.4pcb.com/" target="_blank">
-                <div className="container">
-                    <img src={advLogo} className="sponsorLogo borderColorBlack" alt="Advanced Circuits"/>
-                    <div className = "overlay backgroundBlack">
-                            <div className = "middleText cGold">Learn More</div>
+                <Link style={{ color: "#166837" }} href="https://www.4pcb.com/" target="_blank">
+                    <div className="container">
+                        <img src={advLogo} className="sponsorLogo borderColorBlack" alt="Advanced Circuits" />
+                        <div className="overlay backgroundBlack">
+                            <div className="middleText cGold">Learn More</div>
+                        </div>
                     </div>
-                </div>
-            </Link>
+                </Link>
             </EasyToSeeTooltip>
         </Typography>
     );

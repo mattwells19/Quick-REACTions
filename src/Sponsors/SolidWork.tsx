@@ -6,18 +6,17 @@ import solidLogo from "../Images/solid.jpg";
 
 
 export default function Interest(props: any) {
-    const { classes } = props;
     return (
         <Typography>
             <EasyToSeeTooltip title="https://www.solidworks.com/">
-            <Link href="https://www.solidworks.com/" target="_blank">
-                <div className="container">
-                    <img src={solidLogo} className="sponsorLogo borderColorBlack" alt="SolisWorks Software"/>
-                    <div className = "overlay backgroundBlack">
-                            <div className = "middleText cGold">Learn More</div>
+                <Link href="https://www.solidworks.com/" target="_blank">
+                    <div className="container">
+                        <img src={solidLogo} className="sponsorLogo borderColorBlack" alt="SolisWorks Software" />
+                        <div className="overlay backgroundBlack">
+                            <div className="middleText cGold">Learn More</div>
                         </div>
-                </div>
-            </Link>
+                    </div>
+                </Link>
             </EasyToSeeTooltip>
         </Typography>
     );
