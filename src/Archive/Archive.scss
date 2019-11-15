@@ -12,6 +12,10 @@ h1, h2, h3, h4 {
     text-align: center;
 }
 
+a {
+    text-decoration: none;
+    color: #2D855F;
+}
 
 .sizeOfAlbum{
     height: 20%;
@@ -34,6 +38,15 @@ h1, h2, h3, h4 {
     
 }
 
+#welcomeMsg {
+    font-size: 25px;
+
+}
+
+#checkoutMore {
+    font-size: 22px;
+}
+
 #photoSection {
     padding: 40px;
     padding-top: 0px;
@@ -46,9 +59,10 @@ h1, h2, h3, h4 {
 }
 
 #photoGal {
-    font-size: 40px;
+    font-size: 37px;
     padding: 50px;
     padding-top: 0px;
+    padding-bottom: 0px;
 }
 
 #msgs {

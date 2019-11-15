@@ -18,7 +18,7 @@ const useStyles = makeStyles((theme: Theme) =>
       backgroundColor: '#212B31',
     },
     gridList: {
-      width: 850,
+      width: 950,
       height: 600,
       transform: 'translateZ(0)',
     },
