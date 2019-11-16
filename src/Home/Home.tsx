@@ -34,9 +34,9 @@ const useStyles = makeStyles((theme: Theme) =>
     createStyles({
         missionCard: {
             maxWidth: "50rem",
-            display: "flex",
+            display: "inline-table",
             backgroundColor: "#212b31",
-            padding: "10px",
+            padding: "2rem",
             margin: "auto",
             verticalAlign: "middle",
         },
@@ -61,7 +61,11 @@ function Home() {
             </div>
             <div className="mechanical">
                 <Paper className={classes.missionCard} elevation={24} style={{marginLeft: card_margin, marginRight: card_margin}}>
-                    <Typography align="center" className="more-text" variant="h3">
+                    <Typography variant="h3" className="more-text" align="center">
+                        The Club's Mission
+                    </Typography>
+                    <CardDivider/>
+                    <Typography align="center" className="more-text" variant="h4">
                         Our mission is to educate and to learn about all aspects of mobile robotics.
                         From the novice to the experienced, we welcome all students who are excited
                         to learn more about the field of robotics and apply the concepts they learn
