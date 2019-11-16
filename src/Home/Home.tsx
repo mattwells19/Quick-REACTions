@@ -18,7 +18,6 @@ const SideCard = withStyles({
         margin: "auto",
         textAlign: "center",
         borderRadius: "1rem",
-        height: "12rem",
         maxWidth: "max-content",
     },
 })(Card);
@@ -49,8 +48,8 @@ const useStyles = makeStyles((theme: Theme) =>
 function Home() {
     const width = useCurrentWidth();
     const classes = useStyles();
-    // const max_width = width > 1000 ? "15rem" : "";
-    const card_margin = width > 1000 ? "" : "10px";
+    const extras_display = width > 1000 ? "inline-flex" : "grid";
+    const extras_height = width > 1000 ? "12rem" : "40rem";
 
     DocumentTitle({title: "Home"});
 
@@ -60,7 +59,7 @@ function Home() {
                 <img src={logo} className="logo" alt="Logo" />
             </div>
             <div className="mechanical">
-                <Paper className={classes.missionCard} elevation={24} style={{marginLeft: card_margin, marginRight: card_margin}}>
+                <Paper className={classes.missionCard} elevation={24}>
                     <Typography variant="h3" className="more-text" align="center">
                         The Club's Mission
                     </Typography>
@@ -76,11 +75,11 @@ function Home() {
             <div className="computer">
                 <Grid container justify="space-evenly" alignItems="center" style={{height: "100%"}}>
                     <Grid item>
-                        <SideCard elevation={24} >
+                        <SideCard elevation={24} style={{display: extras_display, height: extras_height}} >
                             <Social CardDivider={CardDivider}/>
-                            <Divider style={{margin: "auto 10px", backgroundColor: "#B3A369"}} orientation="vertical"/>
+                            {width > 1000 && <Divider style={{margin: "auto 10px", backgroundColor: "#B3A369"}} orientation="vertical"/>}
                             <Interest CardDivider={CardDivider}/>
-                            <Divider style={{margin: "auto 10px", backgroundColor: "#B3A369"}} orientation="vertical"/>
+                            {width > 1000 && <Divider style={{margin: "auto 10px", backgroundColor: "#B3A369"}} orientation="vertical"/>}
                             <PayPal CardDivider={CardDivider}/>
                         </SideCard>
                     </Grid>
