@@ -31,15 +31,15 @@ const SlideShowContentItems = [
         size: { width: "504px", height: "504px" }
     },
     {
-        text: "We educate other students",
+        text: "We educate other students through workshops and demonstrations",
         img: ArduinoWksp
     },
     {
-        text: "We educate each other",
+        text: "We educate each other by working on multiple things at once and then sharing what we learned",
         img: SprintReview23
     },
     {
-        text: "We design, build, and test a robot to compete",
+        text: "We design, build, and test a robot to compete against other schools in the region",
         img: Robot
     }
 ];
