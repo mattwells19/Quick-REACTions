@@ -1,5 +1,5 @@
 import React from "react";
-import { Typography, Card, Paper, makeStyles, withStyles, createStyles, Theme, Link } from "@material-ui/core";
+import { Typography, Card, Paper, makeStyles, withStyles, createStyles, Theme, IconButton } from "@material-ui/core";
 import { Email } from "@material-ui/icons";
 import { useCurrentWidth } from "react-socks";
 import support from "../Images/roboSuport.png";
@@ -16,13 +16,15 @@ import JoinTeam from "./JoinTeam";
 const SponsorCard = withStyles({
     root: {
         display: "flex",
-        padding: "10px",
-        minWidth: "250px",
+        //padding: "10px",
+        //minWidth: "250px",
+        //margin: "auto",
         fontFamily: "Inconsolata",
         textAlign: "center",
         backgroundColor: "inherit",
         borderRadius: "1rem",
         alignItems: "Center",
+        boxShadow: "inset 0px 0px 9px 1px",
     },
 })(Card);
 
@@ -42,10 +44,10 @@ const useStyles = makeStyles((theme: Theme) =>
         sectionCard: {
             display: "flex",
             color: "#212b31",
-            boxShadow: "inset 0px 0px 50px 30px",
+            boxShadow: "inset 0px 0px 10px 4px",
             opacity: .97,
             padding: "10px",
-            margin: "auto",
+            margin: "auto auto auto 10rem",
         },
         SideCard: {
             display: "flex",
@@ -53,7 +55,7 @@ const useStyles = makeStyles((theme: Theme) =>
             backgroundColor: "#B3A369",
             boxShadow: "inset 0px 0px 23px 10px",
             padding: "10px",
-            height: "10rem",
+            height: "100%",
             width: "auto",
         },
         divider: {
@@ -92,17 +94,18 @@ function Sponsors() {
 
             {/* leftSide Card */}
             <SponsorCard className="leftCard" style={{ gridArea: "leftCard", backgroundColor: "#B3A369", maxWidth: max_width, marginLeft: card_margin, marginRight: card_margin }}>
-                <Typography align="left" variant="h5">
+                <Typography align="center" variant="h5">
                     Interested In Sponsoring?<br />
-                    <Link color="inherit" style={{ textDecoration: "none" }} href="mailto:car-robotics@uncc.edu">
-                        Please Contact<br />Sam Luu  {<Email className="icon" fontSize="large" />}</Link>
                 </Typography>
             </SponsorCard>
 
             {/* rightSide Card */}
             <SponsorCard className="rightCard" style={{ gridArea: "rightCard", backgroundColor: "#B3A369", maxWidth: max_width, marginLeft: card_margin, marginRight: card_margin }}>
-                <Typography align="left" variant="h5">
-                    Placeholder for optional text to be displayed on the right of the screen
+                <Typography align="center" variant="h5">
+                    Please Contact Sam Luu
+                    <IconButton href="mailto:car-robotics@uncc.edu/" target="_blank">
+                        <Email fontSize="large" htmlColor="#212b31" />
+                    </IconButton>
                 </Typography>
             </SponsorCard>
 
@@ -148,10 +151,10 @@ function Sponsors() {
             </Paper>
             {/* Sponsors Cards */}
             <SponsorCard className="gSpon" style={{ gridArea: "sSpon1", maxWidth: max_width, marginLeft: card_margin, marginRight: card_margin }}>
-                <Ctc classes={classes} />
+                <Advanced classes={classes} />
             </SponsorCard>
             <SponsorCard className="gSpon" style={{ gridArea: "sSpon2", maxWidth: max_width, marginLeft: card_margin, marginRight: card_margin }}>
-                <JoinTeam classes={classes} />
+                <Ctc classes={classes} />
             </SponsorCard>
 
             {/* GREEN Sponsors Section */}
@@ -166,10 +169,8 @@ function Sponsors() {
                 </Typography>
             </Paper>
             {/* Sponsors Cards */}
+
             <SponsorCard className="gSpon" style={{ gridArea: "grSpon1", maxWidth: max_width, marginLeft: card_margin, marginRight: card_margin }}>
-                <Advanced classes={classes} />
-            </SponsorCard>
-            <SponsorCard className="gSpon" style={{ gridArea: "grSpon2", maxWidth: max_width, marginLeft: card_margin, marginRight: card_margin }}>
                 <JoinTeam classes={classes} />
             </SponsorCard>
 
