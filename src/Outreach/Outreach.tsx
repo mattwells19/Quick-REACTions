@@ -7,8 +7,8 @@ import arduino1 from "../Images/Outreach/ArduinoWksp-1.jpg";
 import bobsBash from "../Images/Outreach/BobsBash1-2.jpg";
 import discoveryplace1 from "../Images/Outreach/DiscoveryPlace1.jpg";
 import discoveryplace2 from "../Images/Outreach/DiscoveryPlace2.jpg";
-import elementary1 from "../Images/Outreach/Elemtary1.jpg";
-import elementary2 from "../Images/Outreach/Elemtary2.jpg";
+import elementary1 from "../Images/Outreach/Elementary1.jpg";
+import elementary2 from "../Images/Outreach/Elementary2.jpg";
 import ncscience1 from "../Images/Outreach/NCScience1.jpg";
 import "./Outreach.scss";
 
@@ -67,7 +67,7 @@ function Outreach() {
 
             <Paper className={classes.bottomCard} elevation={25} style={{marginLeft: card_margin, marginRight: card_margin}}>
                 <Typography align="center" className="more-text" variant="h4">
-                    We love helping and reaching out to our community. Volunteering is very important to us
+                    We enjoy helping and reaching out to our community. Volunteering is very important to us
                     and we strive to make our community better every chance we get. 
                 </Typography>
             </Paper>
@@ -75,7 +75,10 @@ function Outreach() {
 
             {/*Arduino 1 Image */}
             <img src={arduino1} className = "arduino1" alt = "Arduino1" />
+            
                 
+
+
 
             {/*Bobs Bash Image*/}
             <img src={bobsBash} className = "bobsBash" alt = "BobsBash" />
@@ -88,6 +91,23 @@ function Outreach() {
             
             {/*Discovery Place 2 Image */}
             <img src={discoveryplace2} className = "discoveryplace2" alt = "Discoveryplace2" />
+
+
+
+            {/*Elementary school 1 Image */}
+            <img src = {elementary1} className = "elementary1" alt = "Elementary1" />
+
+
+
+             {/*Elementary school 2 Image */}
+             <img src = {elementary2} className = "elementary2" alt = "Elementary2" />
+
+
+
+        
+
+
+
             
 
 
