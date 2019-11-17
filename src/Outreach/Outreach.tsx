@@ -11,6 +11,7 @@ import elementary1 from "../Images/Outreach/Elementary1.jpg";
 import elementary2 from "../Images/Outreach/Elementary2.jpg";
 import ncscience1 from "../Images/Outreach/NCScience1.jpg";
 import "./Outreach.scss";
+import "./Arduino1.tsx";
 
 //Used to define a variable of type card and style it
 const SideCard = withStyles({
@@ -26,6 +27,7 @@ const SideCard = withStyles({
         borderRadius: "1rem",
     },
 })(Card);
+
 
 //Used For styling
 const useStyles = makeStyles((theme: Theme) =>
@@ -73,6 +75,8 @@ function Outreach() {
             </Paper>
 
 
+
+            
             {/*Arduino 1 Image */}
             <img src={arduino1} className = "arduino1" alt = "Arduino1" />
             
