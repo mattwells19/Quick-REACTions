@@ -16,9 +16,6 @@ import JoinTeam from "./JoinTeam";
 const SponsorCard = withStyles({
     root: {
         display: "flex",
-        //padding: "10px",
-        //minWidth: "250px",
-        //margin: "auto",
         fontFamily: "Inconsolata",
         textAlign: "center",
         backgroundColor: "inherit",
@@ -44,7 +41,7 @@ const useStyles = makeStyles((theme: Theme) =>
         sectionCard: {
             display: "flex",
             color: "#212b31",
-            boxShadow: "inset 0px 0px 10px 4px",
+            boxShadow: "inset 0px 0px 9px 2px",
             opacity: .97,
             padding: "10px",
             margin: "auto auto auto 10rem",
