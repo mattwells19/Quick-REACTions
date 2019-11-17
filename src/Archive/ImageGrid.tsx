@@ -7,6 +7,7 @@ import GridListTileBar from '@material-ui/core/GridListTileBar';
 import IconButton from '@material-ui/core/IconButton';
 //import StarBorderIcon from '@material-ui/icons/StarBorder';
 import './Archive.scss';
+import { fontSize } from '@material-ui/system';
 
 const useStyles = makeStyles((theme: Theme) =>
   createStyles({
@@ -18,15 +19,16 @@ const useStyles = makeStyles((theme: Theme) =>
       backgroundColor: '#212B31',
     },
     gridList: {
-      width: 950,
-      height: 600,
+      width: 1500,
+      height: 900,
       transform: 'translateZ(0)',
     },
     titleBar: {
       background:
         'linear-gradient(to bottom, rgba(0,0,0,0.7) 0%, ' +
         'rgba(0,0,0,0.3) 70%, rgba(0,0,0,0) 100%)',
-    },
+        
+      },
     icon: {
       color: '#bfbfbf',
     },
@@ -111,32 +113,32 @@ const tileData = [
 },
 {
   img: '/SprintReviews/EndofSprint2-1.jpg',
-  title: 'Sprint Reviews1',
+  title: 'Sprint Reviews',
   featured: true,
 },
 {
   img: '/SprintReviews/EndofSprint2-2.jpg',
-  title: 'Sprint Reviews2',
+  title: 'Sprint Reviews',
   featured: false,
 },
 {
   img: '/SprintReviews/EndofSprint2-3.jpg',
-  title: 'Sprint Reviews3',
+  title: 'Sprint Reviews',
   featured: false,
 },
 {
   img: '/SprintReviews/EndofSprint2-4.jpg',
-  title: 'Sprint Reviews4',
+  title: 'Sprint Reviews',
   featured: true,
 },
 {
   img: '/SprintReviews/EndofSprint2-5.jpg',
-  title: 'Sprint Reviews5',
+  title: 'Sprint Reviews',
   featured: false,
 },
 {
   img: '/SprintReviews/EndofSprint2-7.jpg',
-  title: 'Sprint Reviews7',
+  title: 'Sprint Reviews',
   featured: false,
 },
 
@@ -147,7 +149,7 @@ export default function AdvancedGridList() {
   
     return (
         <div className={classes.root}>
-        <GridList cellHeight={200} spacing={1} className={classes.gridList}>
+        <GridList cellHeight={450} spacing={1} className={classes.gridList}>
           {tileData.map(tile => (
             <GridListTile key={tile.img} cols={tile.featured ? 2 : 1} rows={tile.featured ? 2 : 1}>
               <img src={tile.img} alt={tile.title} />
