@@ -79,7 +79,9 @@ function Outreach() {
             {/*Arduino 1 Image */}
             <Paper className="ImgBox" style={{gridArea: "ard1", backgroundColor: "inherit"}}>
                 <img src={arduino1} className = "arduino1" alt = "Arduino1" />
-                <Typography align = "center" className="more-text" variant="h5" style={{fontFamily: "Inconsolata"}}> This is just a placeholder for text under the Image</Typography>
+                <Typography align = "center" className="more-text" variant="h5" style={{fontFamily: "Inconsolata"}}>
+                    We hosted an information session at the Freshman Engineering Learning Community on the basics of Arduino.
+                </Typography>
             </Paper>
             
             
@@ -87,7 +89,10 @@ function Outreach() {
 
             {/*Bobs Bash Image*/}
             <img src={bobsBash} className = "bobsBash" alt = "BobsBash" />
-            <Typography align = "center" className="more-text" variant="h5" style={{fontFamily: "Inconsolata"}}> This is just a placeholder for text under the Image</Typography>
+            <Typography align = "center" className="more-text" variant="h5" style={{fontFamily: "Inconsolata"}}>
+                Our club took some time during homecoming weekend to show off our progress on the robot for competition 
+                to UNCC Engineering faculty, staff, and alumni.
+            </Typography>
 
 
 
@@ -103,7 +108,10 @@ function Outreach() {
 
             </div>
 
-            <Typography align = "center" className="more-text" variant="h5" style={{fontFamily: "Inconsolata"}}> This is just a placeholder for text under the Image</Typography>
+            <Typography align = "center" className="more-text" variant="h5" style={{fontFamily: "Inconsolata"}}>
+                Our club visited Charlotte’s Discovery Place to provide fun activities for kids of varying ages 
+                to excite them about STEM.
+            </Typography>
 
 
 
@@ -118,14 +126,19 @@ function Outreach() {
 
              </div>
 
-             <Typography align = "center" className="more-text" variant="h5" style={{fontFamily: "Inconsolata"}}> This is just a placeholder for text under the Image</Typography>
+             <Typography align = "center" className="more-text" variant="h5" style={{fontFamily: "Inconsolata"}}> 
+                We visited Mallard Creek Elementary to teach 5th graders how to code with Code.org and Snap.
+             </Typography>
 
 
 
 
              {/*NC Science */}
              <img src = {ncscience1} className = "ncscience1" alt = "Ncscience1" />
-             <Typography align = "center" className="more-text" variant="h5" style={{fontFamily: "Inconsolata"}}> This is just a placeholder for text under the Image</Typography>
+             <Typography align = "center" className="more-text" variant="h5" style={{fontFamily: "Inconsolata"}}>
+                Our club volunteered to talk about robotics and provide some fun activities for kids of varying 
+                ages at a NC Science Festival sponsored event at UNCC’s campus.
+             </Typography>
 
 
 
