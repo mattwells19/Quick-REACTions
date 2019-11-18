@@ -1,5 +1,6 @@
 import React from "react";
 import { Typography, Card, Paper, makeStyles, withStyles, createStyles, Theme, Divider, Grid } from "@material-ui/core";
+import Image from "material-ui-image";
 import { useCurrentWidth } from "react-socks";
 import {DocumentTitle} from "../Main/DocumentTitle";
 import logo from "../Images/CARLogoPrimary.png";
@@ -38,6 +39,7 @@ const useStyles = makeStyles((theme: Theme) =>
             padding: "2rem",
             margin: "auto",
             verticalAlign: "middle",
+            borderRadius: "1rem",
         },
         divider: {
             margin: "2rem",
@@ -56,7 +58,20 @@ function Home() {
     return (
         <>
             <div className="electrical">
-                <img src={logo} className="logo" alt="Logo" />
+                <Image 
+                    src={logo} 
+                    style={{
+                        backgroundColor: "transparent",
+                        paddingTop: "0",
+                    }}
+                    imageStyle={{
+                        position: "relative",
+                        display: "block",
+                        maxHeight: "40%",
+                        maxWidth: "40%",
+                        margin: "2rem auto",
+                    }} 
+                />
             </div>
             <div className="mechanical">
                 <Paper className={classes.missionCard} elevation={24}>
