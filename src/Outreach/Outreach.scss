@@ -7,12 +7,13 @@
     grid-template-columns: repeat(3, 1fr);
     grid-auto-rows: minmax(100px, auto);
     display: grid;
+    margin: auto;
     max-width: 85rem;
     grid-gap: 10px;
     grid-template-areas:
         'banner banner banner'
         'bottomTxt bottomTxt bottomTxt'
-        '.arduino1.'
+        '.ard1.'
         '.bobsBash.'
         '.discoveryplace1.'
         '.discoveryplace2.'
@@ -75,6 +76,13 @@
     color: #B3A369;
 }
 
+.ImgBox {
+    background-color: inherit;
+}
+.textClass {
+    font-size: 10px;
+}
+
 // Arduino1 image styling
 .arduino1 {
     grid-area: arduino1;
@@ -85,7 +93,6 @@
     height: 30rem;
     opacity: .95;
     margin: auto auto auto auto;
-    border-radius: 20rem;
     background-color: rgb(37, 107, 43);
 }
 

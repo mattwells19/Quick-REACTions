@@ -78,7 +78,11 @@ function Outreach() {
 
             
             {/*Arduino 1 Image */}
-            <img src={arduino1} className = "arduino1" alt = "Arduino1" />
+            <Paper className="ImgBox" style={{gridArea: "ard1", backgroundColor: "inherit"}}>
+                <img src={arduino1} className = "arduino1" alt = "Arduino1" />
+                <Typography variant="h3" style={{fontFamily: "Inconsolata"}}> This is just a placeholder for text under the Image</Typography>
+            </Paper>
+            
             
                 
 
