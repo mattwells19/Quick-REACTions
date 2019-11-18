@@ -30,7 +30,6 @@ const useStyles = makeStyles((theme: Theme) =>
         //Format sponsorType card
         tyCard: {
             width: "85%",
-            height: "3rem",
             display: "initial",
             gridArea: "tyTxt",
             padding: "10px",
@@ -80,7 +79,7 @@ function Sponsors() {
             <img src={bannerImg} className="banner" alt="Banner" />
 
             {/* Thank You Text */}
-            <Paper className={classes.tyCard} elevation={24} style={{ marginLeft: card_margin, marginRight: card_margin }}>
+            <Paper className={classes.tyCard} elevation={24} >
                 <Typography align="center" className="ty-text" variant="h4">
                     - Thank You To Our Sponsors For Their Support! -</Typography>
             </Paper>
