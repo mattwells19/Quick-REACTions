@@ -81,12 +81,13 @@
 //leftCard Styling
 .leftCard {
     margin: auto auto auto 20px;
-    padding: 10px 10px 16px 10px;
+    padding: 25px 10px 25px 10px;
 }
 
 //rightCard Styling
 .rightCard {
     margin: auto 20px auto auto;
+    padding: 20px 10px 10px 10px;
 }
 //sponsorCard Styling
 .gSpon {
@@ -97,6 +98,7 @@
     grid-area: desc;
     max-width: 20rem;
     height: 100%;
+    padding-bottom: 1rem;
 }
 
 .secTitle {

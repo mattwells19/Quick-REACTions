@@ -114,9 +114,9 @@ function Sponsors() {
                     <Typography component="p" className="secTitle" variant="h4">Gold Level:<br />($250+)</Typography>
                     <Typography component="p" variant="h5" className="leftAlign">Includes:</Typography>
                     <Typography component="ul">
-                        <Typography component="li">Your Companys Logo On Clubs Shirts</Typography>
-                        <Typography component="li">Logo On Club Merchendise</Typography>
-                        <Typography component="li">Same Benefits As The Silver &amp; Green Level Sponsorship</Typography>
+                        <Typography style={{ fontFamily: "Inconsolata"}} component="li">Your Companys Logo On Clubs Shirts</Typography>
+                        <Typography style={{ fontFamily: "Inconsolata"}} component="li">Logo On Club Merchendise</Typography>
+                        <Typography style={{ fontFamily: "Inconsolata"}} component="li">Same Benefits As The Silver &amp; Green Level Sponsorship</Typography>
                     </Typography>
                 </Typography>
             </Paper>
@@ -140,9 +140,9 @@ function Sponsors() {
                     <Typography component="p" className="secTitle" variant="h4">Silver Level:<br />($100+)</Typography>
                     <Typography component="p" variant="h5" className="leftAlign">Includes:</Typography>
                     <Typography component="ul">
-                        <Typography component="li">Logo On All Of Our Robots</Typography>
-                        <Typography component="li">A Shout Out Before Any Robot Public Demonstrations</Typography>
-                        <Typography component="li">Same Benefits As The Green Level Sponsorship</Typography>
+                        <Typography style={{ fontFamily: "Inconsolata"}} component="li">Logo On All Of Our Robots</Typography>
+                        <Typography style={{ fontFamily: "Inconsolata"}} component="li">A Shout Out Before Any Robot Public Demonstrations</Typography>
+                        <Typography style={{ fontFamily: "Inconsolata"}} component="li">Same Benefits As The Green Level Sponsorship</Typography>
                     </Typography>
                 </Typography>
             </Paper>
@@ -161,7 +161,7 @@ function Sponsors() {
                     <Typography component="p" className="secTitle" variant="h4">Green Level:<br />($-100)</Typography>
                     <Typography component="p" variant="h5" className="leftAlign">Includes:</Typography>
                     <Typography component="ul">
-                        <Typography component="li">Logo &amp; Link To Your Company's Website Will Be Displayed On CAR'S Sponsors Page</Typography>
+                        <Typography style={{ fontFamily: "Inconsolata"}} component="li">Logo &amp; Link To Your Company's Website Will Be Displayed On CAR'S Sponsors Page</Typography>
                     </Typography>
                 </Typography>
             </Paper>
