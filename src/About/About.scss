@@ -30,7 +30,7 @@
 .slideshow-container {
     min-width: 1500px;
     display: grid;
-    row-gap: 20px;
+    grid-row-gap: 15px;
     grid-template-columns: 100px 650px 650px 100px;
     grid-template-areas:
         '. . . .'

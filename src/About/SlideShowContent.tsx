@@ -28,7 +28,7 @@ const SlideShowContentItems = [
     {
         text: "Charlotte Area Robotics is an UNCC Student Organization that competes anually in the IEEE SoutheastCon Hardware Competition",
         img: Logo,
-        size: { width: "504px", height: "504px" }
+        size: { width: "30rem", height: "30rem" }
     },
     {
         text: "We educate other students through workshops and demonstrations",
@@ -54,7 +54,7 @@ export default function SlideShowContent(props: SlideShowContentProps) {
             <Typography variant="h3" className={classes.text} style={{ alignSelf: "center", lineHeight: "1.5em" }}>
                 {contentObject.text}
             </Typography>
-            <img className={classes.img} width={contentObject.size ? contentObject.size.width : "672px"} height={contentObject.size ? contentObject.size.height : "504px"} src={contentObject.img} alt="ContentImage" />
+            <img className={classes.img} style={{width: contentObject.size ? contentObject.size.width : "40rem", height: contentObject.size ? contentObject.size.height : "30rem"}} src={contentObject.img} alt="ContentImage" />
         </>
     );
 }
