@@ -22,8 +22,7 @@ class Archive extends Component {
                         allowFullScreen
                     />       
                 </div>
-                <Typography variant='h3' id ="checkoutMore">Watch more videos on <Link to="https://www.youtube.com/results?search_query=Charlotte+Area+Robotics+" target="_blank">
-                    YouTube </Link>
+                <Typography variant='h3' id ="checkoutMore">Watch more videos on <Link to="https://www.youtube.com/results?search_query=Charlotte+Area+Robotics+" target="_blank">YouTube </Link>
                 </Typography>
                 </div> 
                 <div id="photoSection">
