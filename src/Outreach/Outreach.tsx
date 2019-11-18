@@ -1,5 +1,5 @@
 import React from "react";
-import { Typography, Card, CardActionArea,CardContent, CardMedia, Paper, makeStyles, withStyles, createStyles, Theme } from "@material-ui/core";
+import { Typography, Card, Paper, makeStyles, withStyles, createStyles, Theme } from "@material-ui/core";
 import { useCurrentWidth } from "react-socks";
 import {DocumentTitle} from "../Main/DocumentTitle";
 import banner from "../Images/outreachBan1.jpg";
@@ -11,7 +11,6 @@ import elementary1 from "../Images/Outreach/Elementary1.jpg";
 import elementary2 from "../Images/Outreach/Elementary2.jpg";
 import ncscience1 from "../Images/Outreach/NCScience1.jpg";
 import "./Outreach.scss";
-import "./Arduino1.tsx";
 
 //Used to define a variable of type card and style it
 const SideCard = withStyles({
@@ -80,40 +79,54 @@ function Outreach() {
             {/*Arduino 1 Image */}
             <Paper className="ImgBox" style={{gridArea: "ard1", backgroundColor: "inherit"}}>
                 <img src={arduino1} className = "arduino1" alt = "Arduino1" />
-                <Typography variant="h3" style={{fontFamily: "Inconsolata"}}> This is just a placeholder for text under the Image</Typography>
+                <Typography align = "center" className="more-text" variant="h5" style={{fontFamily: "Inconsolata"}}> This is just a placeholder for text under the Image</Typography>
             </Paper>
             
             
                 
 
-
-
             {/*Bobs Bash Image*/}
             <img src={bobsBash} className = "bobsBash" alt = "BobsBash" />
+            <Typography align = "center" className="more-text" variant="h5" style={{fontFamily: "Inconsolata"}}> This is just a placeholder for text under the Image</Typography>
+
+
+
+
 
             <div style={{display: "inline-flex"}}>
 
             {/*Discovery Place 1 Image */}
             <img src={discoveryplace1} className = "discoveryplace1" alt = "Discoveryplace1" />
-
-
             
             {/*Discovery Place 2 Image */}
             <img src={discoveryplace2} className = "discoveryplace2" alt = "Discoveryplace2" />
 
             </div>
 
-            <Typography>
-                Hi
-            </Typography>
+            <Typography align = "center" className="more-text" variant="h5" style={{fontFamily: "Inconsolata"}}> This is just a placeholder for text under the Image</Typography>
+
+
+
+
+            <div style={{display: "inline-flex"}}>
 
             {/*Elementary school 1 Image */}
             <img src = {elementary1} className = "elementary1" alt = "Elementary1" />
 
-
-
              {/*Elementary school 2 Image */}
              <img src = {elementary2} className = "elementary2" alt = "Elementary2" />
+
+             </div>
+
+             <Typography align = "center" className="more-text" variant="h5" style={{fontFamily: "Inconsolata"}}> This is just a placeholder for text under the Image</Typography>
+
+
+
+
+             {/*NC Science */}
+             <img src = {ncscience1} className = "ncscience1" alt = "Ncscience1" />
+             <Typography align = "center" className="more-text" variant="h5" style={{fontFamily: "Inconsolata"}}> This is just a placeholder for text under the Image</Typography>
+
 
 
 
