@@ -11,6 +11,7 @@ import elementary1 from "../Images/Outreach/Elementary1.jpg";
 import elementary2 from "../Images/Outreach/Elementary2.jpg";
 import ncscience1 from "../Images/Outreach/NCScience1.jpg";
 import "./Outreach.scss";
+import { typography } from "@material-ui/system";
 
 //Used to define a variable of type card and style it
 const SideCard = withStyles({
@@ -74,7 +75,11 @@ function Outreach() {
 
 
             {/*Arduino 1 Image */}
-            <img src={arduino1} className = "arduino1" alt = "Arduino1" />
+            <Paper className="ImgBox" style={{gridArea: "ard1", backgroundColor: "inherit"}}>
+                <img src={arduino1} className = "arduino1" alt = "Arduino1" />
+                <Typography variant="h3" style={{fontFamily: "Inconsolata"}}> This is just a placeholder for text under the Image</Typography>
+            </Paper>
+            
             
                 
 
