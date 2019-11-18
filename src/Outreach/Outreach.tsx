@@ -91,6 +91,7 @@ function Outreach() {
             {/*Bobs Bash Image*/}
             <img src={bobsBash} className = "bobsBash" alt = "BobsBash" />
 
+            <div style={{display: "inline-flex"}}>
 
             {/*Discovery Place 1 Image */}
             <img src={discoveryplace1} className = "discoveryplace1" alt = "Discoveryplace1" />
@@ -100,7 +101,11 @@ function Outreach() {
             {/*Discovery Place 2 Image */}
             <img src={discoveryplace2} className = "discoveryplace2" alt = "Discoveryplace2" />
 
+            </div>
 
+            <Typography>
+                Hi
+            </Typography>
 
             {/*Elementary school 1 Image */}
             <img src = {elementary1} className = "elementary1" alt = "Elementary1" />
