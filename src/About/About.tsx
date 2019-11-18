@@ -19,6 +19,7 @@ const AboutBackground = withStyles({
     root: {
         backgroundColor: "#212B31",
         width: "max-content",
+        borderRadius: "1rem",
     },
 })(Paper);
 
@@ -104,6 +105,12 @@ class About extends Component {
                                 name="Teng Lee"
                                 officer={Officer.Developer}
                                 linkedIn="https://www.linkedin.com/in/teng-lee-5323a0162/"
+                            />
+                            <OfficerCard
+                                image={President}
+                                name="Aaron Yow"
+                                officer={Officer.Developer}
+                                linkedIn="https://www.linkedin.com/in/aaron-yow-6847a6170"
                             />
                         </div>
                     </AboutBackground>

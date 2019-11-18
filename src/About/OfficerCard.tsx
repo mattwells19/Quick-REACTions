@@ -25,6 +25,7 @@ const useStyles = makeStyles((theme: Theme) =>
             width: "250px",
             margin: "20px",
             backgroundColor: "#B3A369",
+            boxShadow: "0px 0px 10px black",
         },
         officerPicture: {
             height: "300px",

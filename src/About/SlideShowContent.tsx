@@ -1,5 +1,6 @@
 import React from "react";
 import { Typography, makeStyles, Theme, createStyles } from "@material-ui/core";
+import Image from 'material-ui-image';
 import Robot from "../Images/Robot2.jpg";
 import SprintReview23 from "../Images/SprintReviews/EndofSprint2-3.jpg";
 import ArduinoWksp from "../Images/Outreach/ArduinoWksp-2.jpg";
@@ -16,11 +17,9 @@ const useStyles = makeStyles((theme: Theme) =>
             gridArea: "text",
             textAlign: "center",
             color: "#B3A369",
+            alignSelf: "center", 
+            lineHeight: "1.5em",
         },
-        img: {
-            margin: "auto",
-            gridArea: "content",
-        }
     }),
 );
 
@@ -32,15 +31,18 @@ const SlideShowContentItems = [
     },
     {
         text: "We educate other students through workshops and demonstrations",
-        img: ArduinoWksp
+        img: ArduinoWksp,
+        size: { width: "40rem", height: "30rem" }
     },
     {
         text: "We educate each other by working on multiple things at once and then sharing what we learned",
-        img: SprintReview23
+        img: SprintReview23,
+        size: { width: "40rem", height: "30rem" }
     },
     {
         text: "We design, build, and test a robot to compete against other schools in the region",
-        img: Robot
+        img: Robot,
+        size: { width: "40rem", height: "30rem" }
     }
 ];
 
@@ -51,10 +53,27 @@ export default function SlideShowContent(props: SlideShowContentProps) {
 
     return (
         <>
-            <Typography variant="h3" className={classes.text} style={{ alignSelf: "center", lineHeight: "1.5em" }}>
+            <Typography variant="h3" className={classes.text} style={{animationName: "fadeIn", animationDuration: "1s"}}>
                 {contentObject.text}
             </Typography>
-            <img className={classes.img} style={{width: contentObject.size ? contentObject.size.width : "40rem", height: contentObject.size ? contentObject.size.height : "30rem"}} src={contentObject.img} alt="ContentImage" />
+
+            <Image 
+                style={{ 
+                    gridArea: "content", 
+                    backgroundColor: "#212B31", 
+                    paddingTop: "0", 
+                    margin: "auto"
+                }} 
+                imageStyle={{ 
+                    borderRadius: "1rem",
+                    boxShadow: contentObject.img !== Logo ? "0px 0px 15px black" : "",
+                    position: "inherit", 
+                    width: contentObject.size.width, 
+                    height: contentObject.size.height 
+                }} 
+                aspectRatio={4/3} 
+                src={contentObject.img} 
+            />
         </>
     );
 }

@@ -23,6 +23,7 @@ export default function Slideshow(props: any) {
     const AboutBackground = withStyles({
         root: {
             backgroundColor: "#212B31",
+            borderRadius: "1rem",
         },
     })(Paper);
 
