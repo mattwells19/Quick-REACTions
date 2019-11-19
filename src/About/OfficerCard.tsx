@@ -31,16 +31,6 @@ const useStyles = makeStyles((theme: Theme) =>
             height: "300px",
             backgroundColor: "#424242",
         },
-        expand: {
-            transform: 'rotate(0deg)',
-            marginLeft: 'auto',
-            transition: theme.transitions.create('transform', {
-                duration: theme.transitions.duration.shortest,
-            }),
-        },
-        expandOpen: {
-            transform: 'rotate(180deg)',
-        },
     }),
 );
 
@@ -56,11 +46,11 @@ export default function OfficerCard(props: OfficerCardProps) {
                         className={classes.officerPicture}
                     />
                     <CardContent>
-                        <Typography align="center" variant="h5">
+                        <Typography align="center" variant="h5" style={{color: "#212B31"}}>
                             {props.officer}
                         </Typography>
                         <Divider />
-                        <Typography align="center" variant="h6">
+                        <Typography align="center" variant="h6" style={{color: "#212B31"}}>
                             {props.name}
                         </Typography>
                     </CardContent>
