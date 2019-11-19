@@ -1,6 +1,9 @@
 import React, { Component } from "react";
 import CountdownTimer from "./CountdownTimer";
-import { Paper, withStyles, Typography, Divider } from "@material-ui/core";
+import Image from "material-ui-image";
+import { Paper, withStyles, Typography, Divider, Link } from "@material-ui/core";
+import IEEE from "../Images/ieee.png";
+import EasyToSeeTooltip from "../Main/EasyToSeeTooltip";
 
 const PaperBackground = withStyles({
     root: {
@@ -20,8 +23,18 @@ const RulesText = withStyles({
 class Competition extends Component {
     render() {
         return (
-            <div style={{ paddingTop: "8rem" }}>
+            <div style={{ paddingTop: "6rem" }}>
                 <CountdownTimer />
+                <PaperBackground style={{width: "1024px"}}>
+                    <Image src={IEEE} style={{backgroundColor: "transparent", height: "18rem", paddingTop: "0px", marginBottom: "32px"}} />
+                    <RulesText align="center" variant="h4">
+                        The <EasyToSeeTooltip title="https://www.ieee.org/"><Link style={{color: "#00713d"}} target="_blank" href="https://www.ieee.org/"> Institute of Electrical and Electronics Engineers (IEEE) </Link></EasyToSeeTooltip>
+                         Region 3 annually hosts student competitions as part of the Southeast Conference. 
+                        Of these competitions, the hardware competition involves students from different 
+                        engineering fields to work together to build and compete with fully autonomous 
+                        robots. This year the competition will be hosted in Raleigh North Carolina on March 14th (for <EasyToSeeTooltip title="https://attend.ieee.org/southeastcon-2020/student-program/student-hardware-competition/"><Link style={{color: "#00713d"}} target="_blank" href="https://attend.ieee.org/southeastcon-2020/student-program/student-hardware-competition/">Pi Day!</Link></EasyToSeeTooltip>). 
+                    </RulesText>
+                </PaperBackground>
                 <PaperBackground>
                     <RulesText variant="h2" align="center">
                         The Rules: Pi Day 2020

@@ -18,7 +18,7 @@ const TimerBackground = withStyles({
 
 export default function TimerDisplay(props: any){
     return(
-        <TimerBackground>
+        <TimerBackground style={{width: "1024px"}}>
             <TimerText variant="h2" align="center">
                 Countdown to Competition!
             </TimerText>
