@@ -60,26 +60,30 @@
 // Arduino1 image styling
 .arduino1 {
     grid-area: arduino1;
-    display: block;
-    padding-top: 1rem;
-    padding-bottom: 1rem;
+    display: inline-flex;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    padding-left: 10px;
+    padding-right: 5px;
     width: 35%;
     height: 30rem;
     opacity: .95;
-    margin: auto 5px auto auto;
-    background-color: #2D855F;
+    margin: auto 0 auto auto;
+    background-color: #212b31;
 }
 
 .arduino8 {
     grid-area: arduino8;
-    display: block;
-    padding-top: 1rem;
-    padding-bottom: 1rem;
+    display: inline-flex;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    padding-left: 5px;
+    padding-right: 10px;
     width: 35%;
     height: 30rem;
     opacity: .95;
-    margin: auto auto auto 5px;
-    background-color: #2D855F;
+    margin: auto auto auto 0;
+    background-color: #212b31;
 }
 
 
@@ -87,13 +91,15 @@
 .bobsBash {
     grid-area: bobsBash;
     display: block;
-    padding-top: 1rem;
-    padding-bottom: 1rem;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    padding-left: 10px;
+    padding-right: 10px;
     width: 50%;
     height: 30rem;
     opacity: .95;
     margin: auto auto auto auto;
-    background-color: #2D855F;
+    background-color: #212b31;
 
 }
 
@@ -101,39 +107,45 @@
 .discoveryplace1{
     grid-area: discoveryplace1;
     display: inline-flex;
-    padding-top: 1rem;
-    padding-bottom: 1rem;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    padding-left: 10px;
+    padding-right: 5px;
     width: 35%;
     height: 30rem;
     opacity: .95;
-    margin: auto 5px auto auto;
-    background-color: #2D855F;
+    margin: auto 0 auto auto;
+    background-color: #212b31;
 }
 
 // Discovery Place 2 Image styling
 .discoveryplace2{
     grid-area: discoveryplace2;
     display: inline-flex;
-    padding-top: 1rem;
-    padding-bottom: 1rem;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    padding-left: 5px;
+    padding-right: 10px;
     width: 35%;
     height: 30rem;
     opacity: .95;
-    margin: auto auto auto 5px;
-    background-color: #2D855F;
+    margin: auto auto auto 0;
+    background-color: #212b31;
 }
 
 // Elementary 1 Image styling
 .elementary1{
     grid-area: elementary1;
     display: block;
-    padding-top: 1rem;
-    padding-bottom: 1rem;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    padding-left: 10px;
+    padding-right: 5px;
     width: 35%;
     height: 30rem;
     opacity: .95;
-    margin: auto 5px auto auto;
-    background-color:#2D855F;
+    margin: auto 0 auto auto;
+    background-color:#212b31;
 }
 
 
@@ -141,13 +153,15 @@
 .elementary2{
     grid-area: elementary2;
     display: block;
-    padding-top: 1rem;
-    padding-bottom: 1rem;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    padding-left: 5px;
+    padding-right: 10px;
     width: 35%;
     height: 30rem;
     opacity: .95;
-    margin: auto auto auto 5px;
-    background-color: #2D855F;
+    margin: auto auto auto 0;
+    background-color: #212b31;
 }
 
 
@@ -155,13 +169,15 @@
 .ncscience1{
     grid-area: ncscience1;
     display: block;
-    padding-top: 1rem;
-    padding-bottom: 1rem;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    padding-left: 10px;
+    padding-right: 10px;
     width: 50%;
     height: 30rem;
     opacity: .95;
     margin: auto auto auto auto;
-    background-color: #2D855F;
+    background-color: #212b31;
 }
 
 

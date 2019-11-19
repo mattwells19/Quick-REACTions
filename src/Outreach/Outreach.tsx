@@ -39,7 +39,7 @@ const useStyles = makeStyles((theme: Theme) =>
             gridArea: "bottomTxt",
             padding: "10px",
             paddingBottom: "10px",
-            margin: "auto auto 2rem auto",
+            margin: "-5px auto 2rem auto",
         },
         divider: {
             margin: "10px",
@@ -83,7 +83,9 @@ function Outreach() {
             </div>
 
             <Paper className={classes.bottomCard} elevation={25} style={{marginLeft: card_margin, marginRight: card_margin}}>
-                <Typography align = "center" className="more-text" variant="h5" style={{fontFamily: "Inconsolata"}}> placeholder </Typography>
+                <Typography align = "center" className="more-text" variant="h5" style={{fontFamily: "Inconsolata"}}>
+                    We hosted an information session at the Freshman Engineering Learning Community on the basics of Arduino.
+                </Typography>
             </Paper>
             
             
@@ -92,9 +94,14 @@ function Outreach() {
 
             {/*Bobs Bash Image*/}
                 <img src={bobsBash} className = "bobsBash" alt = "BobsBash" />
+    
             <Paper className={classes.bottomCard} elevation={25} style={{marginLeft: card_margin, marginRight: card_margin}}>
-                <Typography align = "center" className="more-text" variant="h5" style={{fontFamily: "Inconsolata"}}> placeholder </Typography>
+            <Typography align = "center" className="more-text" variant="h5" style={{fontFamily: "Inconsolata"}}>
+                Our club took some time during homecoming weekend to show off our progress on the robot for competition 
+                to UNCC Engineering faculty, staff, and alumni.
+            </Typography>
             </Paper>
+
 
 
 
@@ -107,9 +114,14 @@ function Outreach() {
 
             </div>
 
+    
             <Paper className={classes.bottomCard} elevation={25} style={{marginLeft: card_margin, marginRight: card_margin}}>
-                <Typography align = "center" className="more-text" variant="h5" style={{fontFamily: "Inconsolata"}}> placeholder </Typography>
+            <Typography align = "center" className="more-text" variant="h5" style={{fontFamily: "Inconsolata"}}>
+                Our club visited Charlotte’s Discovery Place to provide fun activities for kids of varying ages 
+                to excite them about STEM.
+            </Typography>
             </Paper>
+
 
 
 
@@ -124,16 +136,23 @@ function Outreach() {
              </div>
 
              <Paper className={classes.bottomCard} elevation={25} style={{marginLeft: card_margin, marginRight: card_margin}}>
-                <Typography align = "center" className="more-text" variant="h5" style={{fontFamily: "Inconsolata"}}> placeholder </Typography>
-            </Paper>
+             <Typography align = "center" className="more-text" variant="h5" style={{fontFamily: "Inconsolata"}}> 
+                We visited Mallard Creek Elementary to teach 5th graders how to code with Code.org and Snap.
+             </Typography>
+             </Paper>
 
 
 
              {/*NC Science */}
                 <img src = {ncscience1} className = "ncscience1" alt = "Ncscience1" />
+
              <Paper className={classes.bottomCard} elevation={25} style={{marginLeft: card_margin, marginRight: card_margin}}>
-                <Typography align = "center" className="more-text" variant="h5" style={{fontFamily: "Inconsolata"}}> placeholder </Typography>
-            </Paper>
+             <Typography align = "center" className="more-text" variant="h5" style={{fontFamily: "Inconsolata"}}>
+                Our club volunteered to talk about robotics and provide some fun activities for kids of varying 
+                ages at a NC Science Festival sponsored event at UNCC’s campus.
+             </Typography>
+             </Paper>
+
 
 
 
