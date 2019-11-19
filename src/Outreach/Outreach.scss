@@ -5,12 +5,7 @@
     background-position: center center;
     background-size: contain;
     margin: auto;
-    max-width: 85rem;
-    
-        
-        
-        
-        
+    max-width: 85rem;   
 }
 
 //Main Grid Setup (Mobile Version)
@@ -18,7 +13,9 @@
     background-image: url("../Images/UNCCCrown.png");
     background-repeat: no-repeat;
     background-position: center center;
-   
+    background-size: contain;
+    margin: auto;
+    max-width: 85rem; 
 }
 
 //Banner Image Styling
@@ -53,6 +50,7 @@
 .ImgBox {
     background-color: inherit;
 }
+
 .textClass {
     font-size: 10px;
 }
