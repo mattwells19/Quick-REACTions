@@ -61,12 +61,24 @@
 .arduino1 {
     grid-area: arduino1;
     display: block;
-    padding-top: 3rem;
+    padding-top: 1rem;
     padding-bottom: 1rem;
-    width: 50%;
+    width: 35%;
     height: 30rem;
     opacity: .95;
-    margin: auto auto auto auto;
+    margin: auto 5px auto auto;
+    background-color: #2D855F;
+}
+
+.arduino8 {
+    grid-area: arduino8;
+    display: block;
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+    width: 35%;
+    height: 30rem;
+    opacity: .95;
+    margin: auto auto auto 5px;
     background-color: #2D855F;
 }
 
@@ -75,7 +87,7 @@
 .bobsBash {
     grid-area: bobsBash;
     display: block;
-    padding-top: 5rem;
+    padding-top: 1rem;
     padding-bottom: 1rem;
     width: 50%;
     height: 30rem;
@@ -89,12 +101,12 @@
 .discoveryplace1{
     grid-area: discoveryplace1;
     display: inline-flex;
-    padding-top: 8rem;
+    padding-top: 1rem;
     padding-bottom: 1rem;
-    width: 50%;
+    width: 35%;
     height: 30rem;
     opacity: .95;
-    margin: auto auto auto auto;
+    margin: auto 5px auto auto;
     background-color: #2D855F;
 }
 
@@ -102,12 +114,12 @@
 .discoveryplace2{
     grid-area: discoveryplace2;
     display: inline-flex;
-    padding-top: 8rem;
+    padding-top: 1rem;
     padding-bottom: 1rem;
-    width: 50%;
+    width: 35%;
     height: 30rem;
     opacity: .95;
-    margin: auto auto auto auto;
+    margin: auto auto auto 5px;
     background-color: #2D855F;
 }
 
@@ -115,12 +127,12 @@
 .elementary1{
     grid-area: elementary1;
     display: block;
-    padding-top: 8rem;
+    padding-top: 1rem;
     padding-bottom: 1rem;
-    width: 50%;
+    width: 35%;
     height: 30rem;
     opacity: .95;
-    margin: auto auto auto auto;
+    margin: auto 5px auto auto;
     background-color:#2D855F;
 }
 
@@ -129,12 +141,12 @@
 .elementary2{
     grid-area: elementary2;
     display: block;
-    padding-top: 8rem;
+    padding-top: 1rem;
     padding-bottom: 1rem;
-    width: 50%;
+    width: 35%;
     height: 30rem;
     opacity: .95;
-    margin: auto auto auto auto;
+    margin: auto auto auto 5px;
     background-color: #2D855F;
 }
 
@@ -143,7 +155,7 @@
 .ncscience1{
     grid-area: ncscience1;
     display: block;
-    padding-top: 6rem;
+    padding-top: 1rem;
     padding-bottom: 1rem;
     width: 50%;
     height: 30rem;

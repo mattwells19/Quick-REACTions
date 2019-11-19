@@ -4,6 +4,7 @@ import { useCurrentWidth } from "react-socks";
 import {DocumentTitle} from "../Main/DocumentTitle";
 import banner from "../Images/outreachBan1.jpg";
 import arduino1 from "../Images/Outreach/ArduinoWksp-1.jpg";
+import arduino8 from "../Images/Outreach/ArduinoWksp-8.jpg";
 import bobsBash from "../Images/Outreach/BobsBash1-2.jpg";
 import discoveryplace1 from "../Images/Outreach/DiscoveryPlace1.jpg";
 import discoveryplace2 from "../Images/Outreach/DiscoveryPlace2.jpg";
@@ -37,7 +38,8 @@ const useStyles = makeStyles((theme: Theme) =>
             backgroundColor: "#212b31",
             gridArea: "bottomTxt",
             padding: "10px",
-            margin: "auto",
+            paddingBottom: "10px",
+            margin: "auto auto 2rem auto",
         },
         divider: {
             margin: "10px",
@@ -50,7 +52,6 @@ function Outreach() {
     //Set the default sizing only used for (mobile version)
     const width = useCurrentWidth();
     const classes = useStyles();
-    const max_width = width > 1000 ? "15rem" : "";
     const card_margin = width > 1000 ? "" : "10px";
 
     //Used to set website tab name 
@@ -75,20 +76,25 @@ function Outreach() {
 
 
 
-            
-            {/*Arduino 1 Image */}
-            <Paper className="ImgBox" style={{gridArea: "ard1", backgroundColor: "inherit"}}>
+            <div style={{display: "inline-flex"}}>
+            {/*Arduino Images */}
                 <img src={arduino1} className = "arduino1" alt = "Arduino1" />
-                <Typography align = "center" className="more-text" variant="h5" style={{fontFamily: "Inconsolata"}}> This is just a placeholder for text under the Image</Typography>
+                <img src={arduino8} className = "arduino8" alt = "Arduino8" />
+            </div>
+
+            <Paper className={classes.bottomCard} elevation={25} style={{marginLeft: card_margin, marginRight: card_margin}}>
+                <Typography align = "center" className="more-text" variant="h5" style={{fontFamily: "Inconsolata"}}> placeholder </Typography>
             </Paper>
+            
             
             
                 
 
             {/*Bobs Bash Image*/}
-            <img src={bobsBash} className = "bobsBash" alt = "BobsBash" />
-            <Typography align = "center" className="more-text" variant="h5" style={{fontFamily: "Inconsolata"}}> This is just a placeholder for text under the Image</Typography>
-
+                <img src={bobsBash} className = "bobsBash" alt = "BobsBash" />
+            <Paper className={classes.bottomCard} elevation={25} style={{marginLeft: card_margin, marginRight: card_margin}}>
+                <Typography align = "center" className="more-text" variant="h5" style={{fontFamily: "Inconsolata"}}> placeholder </Typography>
+            </Paper>
 
 
 
@@ -96,15 +102,14 @@ function Outreach() {
             <div style={{display: "inline-flex"}}>
 
             {/*Discovery Place 1 Image */}
-            <img src={discoveryplace1} className = "discoveryplace1" alt = "Discoveryplace1" />
-            
-            {/*Discovery Place 2 Image */}
+            <img src={discoveryplace1} className = "discoveryplace1" alt = "Discoveryplace1" />{/*Discovery Place 2 Image */}
             <img src={discoveryplace2} className = "discoveryplace2" alt = "Discoveryplace2" />
 
             </div>
 
-            <Typography align = "center" className="more-text" variant="h5" style={{fontFamily: "Inconsolata"}}> This is just a placeholder for text under the Image</Typography>
-
+            <Paper className={classes.bottomCard} elevation={25} style={{marginLeft: card_margin, marginRight: card_margin}}>
+                <Typography align = "center" className="more-text" variant="h5" style={{fontFamily: "Inconsolata"}}> placeholder </Typography>
+            </Paper>
 
 
 
@@ -118,15 +123,17 @@ function Outreach() {
 
              </div>
 
-             <Typography align = "center" className="more-text" variant="h5" style={{fontFamily: "Inconsolata"}}> This is just a placeholder for text under the Image</Typography>
-
+             <Paper className={classes.bottomCard} elevation={25} style={{marginLeft: card_margin, marginRight: card_margin}}>
+                <Typography align = "center" className="more-text" variant="h5" style={{fontFamily: "Inconsolata"}}> placeholder </Typography>
+            </Paper>
 
 
 
              {/*NC Science */}
-             <img src = {ncscience1} className = "ncscience1" alt = "Ncscience1" />
-             <Typography align = "center" className="more-text" variant="h5" style={{fontFamily: "Inconsolata"}}> This is just a placeholder for text under the Image</Typography>
-
+                <img src = {ncscience1} className = "ncscience1" alt = "Ncscience1" />
+             <Paper className={classes.bottomCard} elevation={25} style={{marginLeft: card_margin, marginRight: card_margin}}>
+                <Typography align = "center" className="more-text" variant="h5" style={{fontFamily: "Inconsolata"}}> placeholder </Typography>
+            </Paper>
 
 
 
